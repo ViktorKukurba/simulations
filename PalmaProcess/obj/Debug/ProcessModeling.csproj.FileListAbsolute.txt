@@ -53,3 +53,6 @@ C:\Users\Viktor\Dropbox\Aspiranture\Process_3_States\M3\M2\obj\Debug\ProcessMode
 C:\Users\Viktor\Dropbox\Aspiranture\Process_3_States\M3\M2\obj\Debug\M2.ModelingRandomValues.resources
 C:\Users\Viktor\Dropbox\Aspiranture\Process_3_States\M3\M2\obj\Debug\M2.Properties.Resources.resources
 C:\Users\Viktor\Dropbox\Aspiranture\Process_3_States\M3\M2\obj\Debug\ProcessModeling.csproj.GenerateResource.Cache
+D:\Aspiranture\Dis_project\simulations\PalmaProcess\bin\Debug\M2.exe.config
+D:\Aspiranture\Dis_project\simulations\PalmaProcess\obj\Debug\M2.exe
+D:\Aspiranture\Dis_project\simulations\PalmaProcess\obj\Debug\M2.pdb
