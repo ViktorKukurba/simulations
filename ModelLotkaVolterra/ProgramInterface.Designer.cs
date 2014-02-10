@@ -96,7 +96,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
+            this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.generatebtn);
             this.groupBox1.Controls.Add(this.textBoxN);
@@ -208,7 +208,7 @@
             // 
             // generatebtn
             // 
-            this.generatebtn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.generatebtn.BackColor = System.Drawing.Color.WhiteSmoke;
             this.generatebtn.Location = new System.Drawing.Point(101, 79);
             this.generatebtn.Name = "generatebtn";
             this.generatebtn.Size = new System.Drawing.Size(107, 31);
@@ -254,7 +254,6 @@
             this.groupBox4.Size = new System.Drawing.Size(999, 702);
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Пуассонівський процес";
             // 
             // groupBox3
             // 
@@ -269,7 +268,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.MintCream;
+            this.groupBox2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(234, 19);
             this.groupBox2.Name = "groupBox2";
@@ -322,7 +321,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label6);
             this.Name = "ProgramInterface";
-            this.Text = "Моделюввання пуассонівського процесу";
+            this.Text = "Модель Лотки-Вольтерра";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
