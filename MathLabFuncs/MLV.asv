@@ -1,0 +1,8 @@
+function f1MLVSolver(t,x)
+
+function f=MLV(t,x)
+a=1; b=10; c=1; d=1;
+f=[a*x(1)-b*x(1)*x(2);
+   -d*x(2)+c*x(1)*x(2)];
+end
+end

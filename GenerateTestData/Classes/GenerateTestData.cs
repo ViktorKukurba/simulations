@@ -21,7 +21,7 @@ namespace GenerateTestData.Classes
             Duration = duration;
             Interval = intenrval;
             Intensity = intensity;
-            _distribution = new DistributionClass(intensity, 0, distribution, 0);
+            _distribution = new DistributionClass(distribution, 0, intensity, 0);
             _processExpEvents = new List<PoissonPoint>()
                                                      {
                                                          new PoissonPoint()

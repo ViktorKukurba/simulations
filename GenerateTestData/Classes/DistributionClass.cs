@@ -172,7 +172,7 @@ namespace GenerateTestData.Classes
                 double x=0;
                 if (this.DistributionName == "Рівномірний") x = this.Rivnomirnuj(this.a,this.b, t);
                 if (this.DistributionName == "Експоненційний") x = this.Exponential(this.a, this.b, t);
-                if (this.DistributionName == "розподіл Вейбула") x = this.RVejbyla(this.a, this.b);
+                if (this.DistributionName == "розподіл Вейбула") x = this.RVejbyla(this.a, this.b, t);
                 if (this.DistributionName == "Нормальний розподіл") x = this.RNormal(this.a, this.b);
                 if (this.DistributionName == "Бета-розподіл") x = this.RBeta(this.a, this.b);
                 if (this.DistributionName == "Логарифмічно нормальний") x = this.RLogNorm(this.a, this.b);
@@ -193,7 +193,7 @@ namespace GenerateTestData.Classes
         /// <param name="b">Parameter of Distribution(Upper limit or ...)</param>
         /// <param name="distributionName">Name of distribution</param>
         /// <param name="rand"></param>
-            public DistributionClass(double a, double b, string distributionName,double rand)
+            public DistributionClass( string distributionName,double rand, double a, double b)
             {
                 this.a = a; this.b = b; this.DistributionName = distributionName; this.realRnd1 = rand;
             }
@@ -211,9 +211,9 @@ namespace GenerateTestData.Classes
             {
                 return a + (b - a) * realRnd1*time;
             }
-            private double RVejbyla(double a, double b)
+            private double RVejbyla(double a, double b, double time = 1)
             {
-                return Math.Pow(-1 / a * Math.Log(realRnd1), (1 / b));
+                return Math.Pow(-time / a * Math.Log(realRnd1), (time / b));
             }
             private double RNormal(double a, double b)
             {
@@ -345,7 +345,5 @@ namespace GenerateTestData.Classes
                 }
                 return x1 / x;
             }
-        
-    
         }
     }

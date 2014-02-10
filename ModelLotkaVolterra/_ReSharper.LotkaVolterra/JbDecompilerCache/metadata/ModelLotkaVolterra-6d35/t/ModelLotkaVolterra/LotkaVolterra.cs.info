@@ -1,0 +1,8 @@
+﻿Code version: 6.1.1000.82
+Assembly name ModelLotkaVolterra, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null mvid {72a6a438-4359-4ba0-80ed-17f4e3146ccf}
+* ref mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {fcb9dac8-ae3a-4886-93b0-f4cd5b0db0be}
+* ref MWArray, Version=2.10.1.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f
+  mvid {7cad58f3-968b-4ca1-8a20-bc88aa45a835}
+* ref mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {fcb9dac8-ae3a-4886-93b0-f4cd5b0db0be}
