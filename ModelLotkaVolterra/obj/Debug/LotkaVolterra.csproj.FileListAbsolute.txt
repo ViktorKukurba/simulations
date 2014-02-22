@@ -3,7 +3,6 @@ D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\ModelLotkaVo
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\MWArray.dll
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\ModelLotkaVolterra.xml
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\MWArray.xml
-D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.csprojResolveAssemblyReference.cache
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.ProgramInterface.resources
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.Properties.Resources.resources
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.csproj.GenerateResource.Cache

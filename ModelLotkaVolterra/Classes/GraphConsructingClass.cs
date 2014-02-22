@@ -40,6 +40,7 @@ namespace LotkaVolterra.Classes
             pane.XAxis.MajorGrid.IsVisible = true;
             pane.Title.Text = "Модель";
             pane.XAxis.Title.Text = "Час";
+            pane.YAxis.Title.Text = "Значення";
             pane.XAxis.MajorGrid.DashOn = 10;
             pane.XAxis.MajorGrid.DashOff = 5;
             pane.YAxis.MajorGrid.IsVisible = true;

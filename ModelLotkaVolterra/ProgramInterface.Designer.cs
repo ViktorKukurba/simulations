@@ -33,6 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.zedGraph = new ZedGraph.ZedGraphControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.generatebtn = new System.Windows.Forms.Button();
+            this.textBoxN = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxD = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,17 +48,12 @@
             this.textBoxA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtboxEnd = new System.Windows.Forms.TextBox();
-            this.generatebtn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxP = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxN = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -82,7 +82,7 @@
             // 
             this.zedGraph.AutoScroll = true;
             this.zedGraph.AutoSize = true;
-            this.zedGraph.Location = new System.Drawing.Point(6, 19);
+            this.zedGraph.Location = new System.Drawing.Point(10, 16);
             this.zedGraph.Name = "zedGraph";
             this.zedGraph.ScrollGrace = 10D;
             this.zedGraph.ScrollMaxX = 10D;
@@ -91,12 +91,12 @@
             this.zedGraph.ScrollMinX = 10D;
             this.zedGraph.ScrollMinY = 10D;
             this.zedGraph.ScrollMinY2 = 10D;
-            this.zedGraph.Size = new System.Drawing.Size(972, 491);
+            this.zedGraph.Size = new System.Drawing.Size(968, 522);
             this.zedGraph.TabIndex = 2;
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.generatebtn);
             this.groupBox1.Controls.Add(this.textBoxN);
@@ -120,6 +120,51 @@
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметри моделювання";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 100);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 13);
+            this.label9.TabIndex = 54;
+            this.label9.Text = "N(0)";
+            // 
+            // generatebtn
+            // 
+            this.generatebtn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.generatebtn.Location = new System.Drawing.Point(101, 86);
+            this.generatebtn.Name = "generatebtn";
+            this.generatebtn.Size = new System.Drawing.Size(107, 31);
+            this.generatebtn.TabIndex = 38;
+            this.generatebtn.Text = "Моделювати";
+            this.generatebtn.UseVisualStyleBackColor = false;
+            this.generatebtn.Click += new System.EventHandler(this.generatebtn_Click);
+            // 
+            // textBoxN
+            // 
+            this.textBoxN.Location = new System.Drawing.Point(54, 97);
+            this.textBoxN.Name = "textBoxN";
+            this.textBoxN.Size = new System.Drawing.Size(36, 20);
+            this.textBoxN.TabIndex = 53;
+            this.textBoxN.Text = "3";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 74);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(26, 13);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "P(0)";
+            // 
+            // textBoxP
+            // 
+            this.textBoxP.Location = new System.Drawing.Point(54, 71);
+            this.textBoxP.Name = "textBoxP";
+            this.textBoxP.Size = new System.Drawing.Size(36, 20);
+            this.textBoxP.TabIndex = 51;
+            this.textBoxP.Text = "2";
             // 
             // label7
             // 
@@ -206,17 +251,6 @@
             this.txtboxEnd.TabIndex = 39;
             this.txtboxEnd.Text = "50";
             // 
-            // generatebtn
-            // 
-            this.generatebtn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.generatebtn.Location = new System.Drawing.Point(101, 79);
-            this.generatebtn.Name = "generatebtn";
-            this.generatebtn.Size = new System.Drawing.Size(107, 31);
-            this.generatebtn.TabIndex = 38;
-            this.generatebtn.Text = "Моделювати";
-            this.generatebtn.UseVisualStyleBackColor = false;
-            this.generatebtn.Click += new System.EventHandler(this.generatebtn_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -240,7 +274,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(785, 97);
+            this.dataGridView1.Size = new System.Drawing.Size(747, 104);
             this.dataGridView1.TabIndex = 39;
             // 
             // groupBox4
@@ -257,7 +291,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.zedGraph);
             this.groupBox3.Location = new System.Drawing.Point(9, 148);
             this.groupBox3.Name = "groupBox3";
@@ -268,7 +302,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(234, 19);
             this.groupBox2.Name = "groupBox2";
@@ -276,40 +310,6 @@
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Значення моделі";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 13);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "P(0)";
-            // 
-            // textBoxP
-            // 
-            this.textBoxP.Location = new System.Drawing.Point(54, 64);
-            this.textBoxP.Name = "textBoxP";
-            this.textBoxP.Size = new System.Drawing.Size(36, 20);
-            this.textBoxP.TabIndex = 51;
-            this.textBoxP.Text = "2";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 93);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 13);
-            this.label9.TabIndex = 54;
-            this.label9.Text = "N(0)";
-            // 
-            // textBoxN
-            // 
-            this.textBoxN.Location = new System.Drawing.Point(54, 90);
-            this.textBoxN.Name = "textBoxN";
-            this.textBoxN.Size = new System.Drawing.Size(36, 20);
-            this.textBoxN.TabIndex = 53;
-            this.textBoxN.Text = "3";
             // 
             // ProgramInterface
             // 
