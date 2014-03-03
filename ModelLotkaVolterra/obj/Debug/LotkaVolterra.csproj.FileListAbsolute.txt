@@ -9,3 +9,4 @@ D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterr
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.exe
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.pdb
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\LotkaVolterra.pdb
+D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\LotkaVolterra.exe.config
