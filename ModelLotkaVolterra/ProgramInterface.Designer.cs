@@ -54,6 +54,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.zedGraphProcess = new ZedGraph.ZedGraphControl();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -91,7 +92,7 @@
             this.zedGraph.ScrollMinX = 10D;
             this.zedGraph.ScrollMinY = 10D;
             this.zedGraph.ScrollMinY2 = 10D;
-            this.zedGraph.Size = new System.Drawing.Size(968, 522);
+            this.zedGraph.Size = new System.Drawing.Size(968, 252);
             this.zedGraph.TabIndex = 2;
             // 
             // groupBox1
@@ -292,6 +293,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.zedGraphProcess);
             this.groupBox3.Controls.Add(this.zedGraph);
             this.groupBox3.Location = new System.Drawing.Point(9, 148);
             this.groupBox3.Name = "groupBox3";
@@ -310,6 +312,22 @@
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Значення моделі";
+            // 
+            // zedGraphProcess
+            // 
+            this.zedGraphProcess.AutoScroll = true;
+            this.zedGraphProcess.AutoSize = true;
+            this.zedGraphProcess.Location = new System.Drawing.Point(10, 274);
+            this.zedGraphProcess.Name = "zedGraphProcess";
+            this.zedGraphProcess.ScrollGrace = 10D;
+            this.zedGraphProcess.ScrollMaxX = 10D;
+            this.zedGraphProcess.ScrollMaxY = 10D;
+            this.zedGraphProcess.ScrollMaxY2 = 10D;
+            this.zedGraphProcess.ScrollMinX = 10D;
+            this.zedGraphProcess.ScrollMinY = 10D;
+            this.zedGraphProcess.ScrollMinY2 = 10D;
+            this.zedGraphProcess.Size = new System.Drawing.Size(968, 252);
+            this.zedGraphProcess.TabIndex = 3;
             // 
             // ProgramInterface
             // 
@@ -369,6 +387,7 @@
         private System.Windows.Forms.TextBox textBoxN;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxP;
+        private ZedGraph.ZedGraphControl zedGraphProcess;
     }
 }
 

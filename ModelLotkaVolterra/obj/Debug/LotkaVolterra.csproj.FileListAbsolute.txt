@@ -10,3 +10,6 @@ D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterr
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.pdb
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\LotkaVolterra.pdb
 D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\LotkaVolterra.exe.config
+D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\obj\Debug\LotkaVolterra.csprojResolveAssemblyReference.cache
+D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\SemiMarkovProcess.dll
+D:\Aspiranture\Dis_project\simulations\ModelLotkaVolterra\bin\Debug\SemiMarkovProcess.pdb

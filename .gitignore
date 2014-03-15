@@ -10,3 +10,6 @@
 /GenerateTestData/bin
 /GenerateTestData/obj
 /ModelLotkaVolterra/bin/LotkaVolterra.zip
+/ModelLotkaVolterra/_ReSharper.LotkaVolterra
+/ModelLotkaVolterra/packages/IronPython.StdLib.2.7.4
+/ModelLotkaVolterra/packages/IronPython.2.7.4

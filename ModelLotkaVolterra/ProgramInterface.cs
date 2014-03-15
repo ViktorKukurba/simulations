@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
 using System.Windows.Forms;
 using LotkaVolterra.Classes;
-using MathWorks.MATLAB.NET.Arrays;
+using SemiMarkovProcess;
 
 namespace LotkaVolterra
 {
@@ -22,6 +20,22 @@ namespace LotkaVolterra
        
         }
 
+        public List<ProcessMoment> GenerateSemiMarkovProcess(ulong finish)
+        {
+            var states = new List<IState>
+                             {
+                                 new State(0, null, 1),
+                                 new State(1, null, -1)
+                             };
+            var process = new Process(states,null,null,ConditionOfEndProcess.Time, finish);
+            return process.SimulateProcess();
+        }
+
+        private void PerturbParam(double coef, ref double a, double percent = 10)
+        {
+            a = a + coef*percent/100;
+        }
+
         /// <summary>
         /// Handles the Click event of the button3 control.
         /// </summary>
@@ -29,24 +43,29 @@ namespace LotkaVolterra
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void generatebtn_Click(object sender, EventArgs e)
         {
-            var lotka = new ModelLotkaVolterra.LotkaVolterra();
-            var tspan = new double[] { Convert.ToDouble(txtboxStart.Text), Convert.ToDouble(txtboxEnd.Text) };
-            var tspan1 = new double[] { Convert.ToDouble(textBoxN.Text), Convert.ToDouble(textBoxP.Text) };
-            var mwtspan = new MWNumericArray(tspan);
-            var mwtspan2 = new MWNumericArray(tspan1);
-            var mwArrayOut = lotka.MLV(2, mwtspan, mwtspan2, Convert.ToDouble(textBoxA.Text),
-                Convert.ToDouble(textBoxB.Text), Convert.ToDouble(textBoxC.Text), Convert.ToDouble(textBoxD.Text));
+            LVSimulation lvSimulation = new MatLabLVSimulation();
+            var start = Convert.ToDouble(txtboxStart.Text);
+            var finish = Convert.ToUInt64(txtboxEnd.Text);
+
+            var a = Convert.ToDouble(textBoxA.Text);
+            var b = Convert.ToDouble(textBoxB.Text);
+            var c = Convert.ToDouble(textBoxC.Text);
+            var d = Convert.ToDouble(textBoxD.Text);
+
+            var n0 = Convert.ToDouble(textBoxN.Text);
+            var p0 = Convert.ToDouble(textBoxP.Text);
+
+            var semiMarkovPoints = GenerateSemiMarkovProcess(finish);
             var list = new List<MLVPoint>();
-            var length = mwArrayOut[0].NumberOfElements;
-            for (var i = 0; i < length; i++)
+
+            var noPerturbedList = lvSimulation.Generate(start, finish, a, b, c, d, n0, p0);
+
+            foreach (var semiMarkovPoint in semiMarkovPoints)
             {
-                var psoPoint = new MLVPoint()
-                {
-                    TimePoint = ((double[])((MWNumericArray)mwArrayOut[0]).ToVector(MWArrayComponent.Real))[i],
-                    NValue = ((double[])((MWNumericArray)mwArrayOut[1]).ToVector(MWArrayComponent.Real))[i],
-                    PValue = ((double[])((MWNumericArray)mwArrayOut[1]).ToVector(MWArrayComponent.Real))[i + length]
-                };
-                list.Add(psoPoint);
+                n0 = list.Count == 0 ? n0 : list[list.Count-1].NValue;
+                p0 = list.Count == 0 ? p0 : list[list.Count-1].PValue;
+                PerturbParam(semiMarkovPoint.StateValue,ref a);
+                list.AddRange(lvSimulation.Generate(semiMarkovPoint.StartMoment, semiMarkovPoint.EndMoment, a, b, c, d, n0, p0));
             }
             
             // Creating table
@@ -55,7 +74,8 @@ namespace LotkaVolterra
 
             //Creating graphs
             var graphProcess = new GraphConsructingClass();
-            graphProcess.DrawModel(zedGraph, list);
+            graphProcess.DrawModel(zedGraph, list, noPerturbedList);
+            graphProcess.DrawProcess(zedGraphProcess, semiMarkovPoints);
         }
     }
         
