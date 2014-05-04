@@ -31,9 +31,11 @@ namespace LotkaVolterra
             return process.SimulateProcess();
         }
 
-        private void PerturbParam(double coef, ref double a, double percent = 10)
+        private double PerturbParam(double coef, double a, double percent = 50)
         {
             a = a + coef*percent/100;
+            return a;
+
         }
 
         /// <summary>
@@ -64,7 +66,10 @@ namespace LotkaVolterra
             {
                 n0 = list.Count == 0 ? n0 : list[list.Count-1].NValue;
                 p0 = list.Count == 0 ? p0 : list[list.Count-1].PValue;
-                PerturbParam(semiMarkovPoint.StateValue,ref a);
+                a = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxA.Text),10);
+                b = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxB.Text),20);
+                c = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxC.Text),-30);
+                d = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxD.Text),-40);
                 list.AddRange(lvSimulation.Generate(semiMarkovPoint.StartMoment, semiMarkovPoint.EndMoment, a, b, c, d, n0, p0));
             }
             

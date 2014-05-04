@@ -1,31 +1,45 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="317" fromTop="5" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:Program.cs" caret="426" fromTop="16" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:DistributionClass.cs" caret="6707" fromTop="12" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="16139" fromTop="352" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2786" fromTop="69" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="58" fromTop="2" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Properties/f:Resources.Designer.cs" caret="1325" fromTop="12" />
     <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="5825" fromTop="0" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GenerateTestData.cs" caret="1239" fromTop="17" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:DistributionClass.cs" caret="774" fromTop="1" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3527" fromTop="0" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GenerateTestData.cs" caret="4014" fromTop="0" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:Program.cs" caret="398" fromTop="11" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="317" fromTop="5" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="3643" fromTop="14" />
   </RecentFiles>
   <RecentEdits>
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GenerateTestData.cs" caret="5138" fromTop="143" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="5825" fromTop="142" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="1333" fromTop="5" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="1364" fromTop="35" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GenerateTestData.cs" caret="315" fromTop="12" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GenerateTestData.cs" caret="584" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:Program.cs" caret="42" fromTop="1" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="16139" fromTop="13" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="16139" fromTop="2" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:Program.cs" caret="186" fromTop="9" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2786" fromTop="69" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="220" fromTop="10" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="976" fromTop="16" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:DistributionClass.cs" caret="7524" fromTop="14" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:DistributionClass.cs" caret="11926" fromTop="16" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:DistributionClass.cs" caret="5366" fromTop="6" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:DistributionClass.cs" caret="6764" fromTop="3" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GenerateTestData.cs" caret="919" fromTop="12" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3870" fromTop="18" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6103" fromTop="20" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4067" fromTop="10" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5858" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3919" fromTop="12" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="1464" fromTop="9" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6541" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="7145" fromTop="16" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="7130" fromTop="12" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5664" fromTop="18" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="290" fromTop="12" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="2813" fromTop="10" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="3488" fromTop="15" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="756" fromTop="18" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="970" fromTop="16" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5317" fromTop="17" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="2961" fromTop="16" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4924" fromTop="12" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="4350" fromTop="10" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6271" fromTop="13" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6779" fromTop="17" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6946" fromTop="13" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="7081" fromTop="18" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4559" fromTop="20" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4647" fromTop="18" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="4243" fromTop="11" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="5289" fromTop="20" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5596" fromTop="21" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3355" fromTop="11" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="4494" fromTop="13" />
   </RecentEdits>
 </RecentFiles>

@@ -117,4 +117,7 @@
     <data name="StateA_OnNextState_State_0_">
         <value xml:space="preserve">State{0}</value>
     </data>
+    <data name="MathCadIntegration_GetValue__0____1_">
+        <value xml:space="preserve">{0}: {1}</value>
+    </data>
 </root>

@@ -2,4 +2,5 @@
   <Module PersistentId="4BE39EE2-5692-4977-82E1-FC70484D10FD" ModuleId="LotkaVolterra" />
   <Module PersistentId="ModelLotkaVolterra, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="ModelLotkaVolterra" />
   <Module PersistentId="637138CA-F257-4DFB-9A57-0CF3E80988A2" ModuleId="SemiMarkovProcess" />
+  <Module PersistentId="ModelLotkaVolterra, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="ModelLotkaVolterra_1" />
 </Modules>

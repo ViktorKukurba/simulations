@@ -84,6 +84,10 @@ namespace GenerateTestData.Classes
             {
                 _distribution.realRnd1 = rnd.NextDouble();
                 var timePoint = _processExpEvents.Last().TimePoint;
+                if(_processExpEvents.Last().TimePoint == 0)
+                {
+                    timePoint = 0.001;
+                }
                 var time = _distribution.DistributionChoice(timePoint);
                 if (timePoint + time > Interval * i)
                 {
@@ -117,7 +121,7 @@ namespace GenerateTestData.Classes
         public List<PoissonPoint> GeneratePoisson()
         {
             // Create process values using generated process
-            for (int k = 0; k <= (int)Math.Ceiling(Duration / Interval); k++)
+            for (var k = 0; k <= (int)Math.Ceiling(Duration / Interval); k++)
             {
                 var index = k;
                 _processPoisson.Add(new PoissonPoint()

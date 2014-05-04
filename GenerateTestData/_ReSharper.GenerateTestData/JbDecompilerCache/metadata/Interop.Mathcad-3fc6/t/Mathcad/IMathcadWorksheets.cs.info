@@ -1,0 +1,4 @@
+﻿Code version: 6.1.1000.82
+Assembly name Interop.Mathcad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null mvid {17ab1703-1360-455d-bc02-2c14ced513d1}
+* ref mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {fcb9dac8-ae3a-4886-93b0-f4cd5b0db0be}
