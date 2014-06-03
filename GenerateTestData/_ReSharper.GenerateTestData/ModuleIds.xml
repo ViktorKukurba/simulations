@@ -1,4 +1,6 @@
 <Modules>
   <Module PersistentId="4BE39EE2-5692-4977-82E1-FC70484D10FD" ModuleId="ProcessModeling" />
   <Module PersistentId="Interop.Mathcad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Interop.Mathcad" />
+  <Module PersistentId="592734C1-E5EB-43A6-B73D-324673E4C9EB" ModuleId="TestModel" />
+  <Module PersistentId="0833F79F-5272-439B-AC82-4F60A6F4F2B2" ModuleId="TestAnalyser" />
 </Modules>

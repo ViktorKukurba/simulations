@@ -2,3 +2,4 @@ D:\Aspiranture\Dis_project\simulations\SemiMarkovProcess\bin\Debug\SemiMarkovPro
 D:\Aspiranture\Dis_project\simulations\SemiMarkovProcess\bin\Debug\SemiMarkovProcess.pdb
 D:\Aspiranture\Dis_project\simulations\SemiMarkovProcess\obj\Debug\SemiMarkovProcess.dll
 D:\Aspiranture\Dis_project\simulations\SemiMarkovProcess\obj\Debug\SemiMarkovProcess.pdb
+D:\Aspiranture\Dis_project\simulations\SemiMarkovProcess\obj\Debug\SemiMarkovProcess.csprojResolveAssemblyReference.cache

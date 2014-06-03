@@ -4,16 +4,16 @@ import pylab as p
 a = 1.
 b = 0.1
 c = 1.5
-d = 0.75
-def dX_dt(X, t=0):
+d = 1.75
+def dX_dt(X, t=1):
 	""" Return the growth rate of fox and rabbit populations. """
-	return array([ a*X[0] -   b*X[0]*X[1] ,
-                    -c*X[1] + d*b*X[0]*X[1] ])
+	return array([1/t*(a*X[0] -   b*X[0]*X[1]) ,
+                    1/t*(-c*X[1] + d*b*X[0]*X[1])])
 
 from scipy import integrate
-t = linspace(0, 15,  1000)              # time
+t = linspace(1, 15000,  1000)              # time
 #print t
-X0 = array([10, 5])                     # initials conditions: 10 rabbits and 5 foxes
+X0 = array([3, 5])                     # initials conditions: 10 rabbits and 5 foxes
 X, infodict = integrate.odeint(dX_dt, X0, t, full_output=True)
 infodict['message']
 #print infodict

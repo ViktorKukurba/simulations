@@ -1,45 +1,49 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="58" fromTop="2" />
     <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Properties/f:Resources.Designer.cs" caret="1325" fromTop="12" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="5825" fromTop="0" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:DistributionClass.cs" caret="774" fromTop="1" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3527" fromTop="0" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GenerateTestData.cs" caret="4014" fromTop="0" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:Program.cs" caret="398" fromTop="11" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="317" fromTop="5" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="3643" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="570" fromTop="0" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:App.xaml" caret="0" fromTop="0" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:App.xaml.cs" caret="0" fromTop="0" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="1501" fromTop="3" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="702" fromTop="10" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:DataViz/f:TableClass.cs" caret="93" fromTop="3" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:DataViz/f:GraphConsructingClass.cs" caret="78" fromTop="2" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:Program.cs" caret="425" fromTop="11" />
+    <File id="592734C1-E5EB-43A6-B73D-324673E4C9EB/f:MathCadIntegration.cs" caret="352" fromTop="14" />
+    <File id="592734C1-E5EB-43A6-B73D-324673E4C9EB/f:GenerateTestData.cs" caret="5269" fromTop="148" />
+    <File id="592734C1-E5EB-43A6-B73D-324673E4C9EB/f:DistributionClass.cs" caret="12135" fromTop="356" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="1061" fromTop="11" />
   </RecentFiles>
   <RecentEdits>
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3870" fromTop="18" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6103" fromTop="20" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4067" fromTop="10" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5858" fromTop="14" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3919" fromTop="12" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="1464" fromTop="9" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6541" fromTop="14" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="7145" fromTop="16" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="7130" fromTop="12" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5664" fromTop="18" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="290" fromTop="12" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="2813" fromTop="10" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="3488" fromTop="15" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="756" fromTop="18" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="970" fromTop="16" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5317" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="2961" fromTop="16" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4924" fromTop="12" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="4350" fromTop="10" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6271" fromTop="13" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6779" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6946" fromTop="13" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="7081" fromTop="18" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4559" fromTop="20" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4647" fromTop="18" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="4243" fromTop="11" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="5289" fromTop="20" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5596" fromTop="21" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3355" fromTop="11" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:MathCadIntegration.cs" caret="4494" fromTop="13" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="5861" fromTop="13" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2932" fromTop="0" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="577" fromTop="5" />
+    <File id="592734C1-E5EB-43A6-B73D-324673E4C9EB/f:DistributionClass.cs" caret="12135" fromTop="356" />
+    <File id="592734C1-E5EB-43A6-B73D-324673E4C9EB/f:GenerateTestData.cs" caret="5269" fromTop="148" />
+    <File id="592734C1-E5EB-43A6-B73D-324673E4C9EB/f:MathCadIntegration.cs" caret="5465" fromTop="4" />
+    <File id="592734C1-E5EB-43A6-B73D-324673E4C9EB/f:MathCadIntegration.cs" caret="5465" fromTop="146" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="206" fromTop="0" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="1895" fromTop="9" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:DataViz/f:GraphConsructingClass.cs" caret="5850" fromTop="143" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:DataViz/f:TableClass.cs" caret="1389" fromTop="35" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="957" fromTop="0" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:DataViz/f:TableClass.cs" caret="93" fromTop="3" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:DataViz/f:GraphConsructingClass.cs" caret="78" fromTop="2" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="2083" fromTop="2" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="396" fromTop="3" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="2158" fromTop="3" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="893" fromTop="5" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="742" fromTop="3" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="980" fromTop="3" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="0" fromTop="0" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="2078" fromTop="3" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="388" fromTop="13" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="949" fromTop="12" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml" caret="1501" fromTop="3" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="2330" fromTop="12" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="744" fromTop="12" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="1222" fromTop="14" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="1617" fromTop="10" />
+    <File id="0833F79F-5272-439B-AC82-4F60A6F4F2B2/f:MainWindow.xaml.cs" caret="2202" fromTop="19" />
   </RecentEdits>
 </RecentFiles>

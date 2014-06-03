@@ -4,7 +4,8 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
-using GenerateTestData.Classes;
+using GenerateTestData.DataViz;
+using TestProductModel;
 
 namespace GenerateTestData
 {
@@ -19,18 +20,9 @@ namespace GenerateTestData
         public ProgramInterface()
         {
             InitializeComponent();
-
-            comboBoxDistribution.Items.Add("Рівномірний");
             comboBoxDistribution.Items.Add("Експоненційний");
             comboBoxDistribution.Items.Add("розподіл Вейбула");
-            comboBoxDistribution.Items.Add("Нормальний розподіл");
-            comboBoxDistribution.Items.Add("Логарифмічно нормальний");
             comboBoxDistribution.Items.Add("Ерланга");
-            comboBoxDistribution.Items.Add("хі-квадрат");
-            comboBoxDistribution.Items.Add("розподіл Релея");
-            comboBoxDistribution.Items.Add("Стьюдента");
-            comboBoxDistribution.Items.Add("Фішера");
-            comboBoxDistribution.Items.Add("Бета-розподіл");
             comboBoxDistribution.SelectedIndex = 1;
         }
 
@@ -51,11 +43,15 @@ namespace GenerateTestData
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void generatebtn_Click(object sender, EventArgs e)
         {
-            var poissonProcess = new Generator(Convert.ToDouble(txtboxInterval.Text), Convert.ToInt32(txtboxDuration.Text), Convert.ToDouble(txtboxIntensity.Text), comboBoxDistribution.SelectedItem.ToString());
+            var interval = Convert.ToDouble(txtboxInterval.Text);
+            var duration = Convert.ToInt32(txtboxDuration.Text);
+            var intensity = Convert.ToDouble(txtboxIntensity.Text);
+            var distribution = comboBoxDistribution.SelectedItem.ToString();
+            var poissonProcess = new Generator(interval, duration, intensity, distribution);
             //List of process points
             List<PoissonPoint> events = poissonProcess.GenerateExpEvents();
 
-            _testProcess = poissonProcess.GeneratePoisson();
+            _testProcess = poissonProcess.GeneratePoisson(null);
             
             // Creating table
             var table = new TableClass();

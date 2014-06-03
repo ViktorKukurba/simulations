@@ -1,12 +1,14 @@
 /*
 * MATLAB Compiler: 4.14 (R2010b)
-* Date: Sat Apr 12 19:49:46 2014
+* Date: Thu May 08 00:53:01 2014
 * Arguments: "-B" "macro_default" "-W"
 * "dotnet:ModelLotkaVolterra,LotkaVolterra,0.0,private" "-T" "link:lib" "-d"
 * "D:\Aspiranture\Dis_project\simulations\MathLabFuncs\ModelLotkaVolterra\src" "-w"
 * "enable:specified_file_mismatch" "-w" "enable:repeated_file" "-w"
 * "enable:switch_ignored" "-w" "enable:missing_lib_sentinel" "-w" "enable:demo_license"
-* "-v" "class{LotkaVolterra:D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV.m}" 
+* "-v"
+* "class{LotkaVolterra:D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV.m,D:\Aspira
+* nture\Dis_project\simulations\MathLabFuncs\MLV_SAP.m}" 
 */
 using System;
 using System.Reflection;
@@ -25,6 +27,8 @@ namespace ModelLotkaVolterraNative
   /// M-functions contained in the files:
   /// <newpara></newpara>
   /// D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV.m
+  /// <newpara></newpara>
+  /// D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV_SAP.m
   /// <newpara></newpara>
   /// deployprint.m
   /// <newpara></newpara>
@@ -368,6 +372,290 @@ namespace ModelLotkaVolterraNative
                   Object d)
     {
       return mcr.EvaluateFunction(numArgsOut, "MLV", t, x, a, b, c, d);
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 0-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP()
+    {
+      return mcr.EvaluateFunction("MLV_SAP", new Object[]{});
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 1-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="t">Input argument #1</param>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP(Object t)
+    {
+      return mcr.EvaluateFunction("MLV_SAP", t);
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 2-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP(Object t, Object x)
+    {
+      return mcr.EvaluateFunction("MLV_SAP", t, x);
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 3-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP(Object t, Object x, Object a)
+    {
+      return mcr.EvaluateFunction("MLV_SAP", t, x, a);
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 4-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP(Object t, Object x, Object a, Object b)
+    {
+      return mcr.EvaluateFunction("MLV_SAP", t, x, a, b);
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 5-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <param name="c">Input argument #5</param>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP(Object t, Object x, Object a, Object b, Object c)
+    {
+      return mcr.EvaluateFunction("MLV_SAP", t, x, a, b, c);
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 6-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <param name="c">Input argument #5</param>
+    /// <param name="d">Input argument #6</param>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP(Object t, Object x, Object a, Object b, Object c, Object d)
+    {
+      return mcr.EvaluateFunction("MLV_SAP", t, x, a, b, c, d);
+    }
+
+
+    /// <summary>
+    /// Provides a single output, 7-input Objectinterface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <param name="c">Input argument #5</param>
+    /// <param name="d">Input argument #6</param>
+    /// <param name="alpha">Input argument #7</param>
+    /// <returns>An Object containing the first output argument.</returns>
+    ///
+    public Object MLV_SAP(Object t, Object x, Object a, Object b, Object c, Object d, 
+                    Object alpha)
+    {
+      return mcr.EvaluateFunction("MLV_SAP", t, x, a, b, c, d, alpha);
+    }
+
+
+    /// <summary>
+    /// Provides the standard 0-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", new Object[]{});
+    }
+
+
+    /// <summary>
+    /// Provides the standard 1-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <param name="t">Input argument #1</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut, Object t)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", t);
+    }
+
+
+    /// <summary>
+    /// Provides the standard 2-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut, Object t, Object x)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", t, x);
+    }
+
+
+    /// <summary>
+    /// Provides the standard 3-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut, Object t, Object x, Object a)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", t, x, a);
+    }
+
+
+    /// <summary>
+    /// Provides the standard 4-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut, Object t, Object x, Object a, Object b)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", t, x, a, b);
+    }
+
+
+    /// <summary>
+    /// Provides the standard 5-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <param name="c">Input argument #5</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut, Object t, Object x, Object a, Object b, 
+                      Object c)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", t, x, a, b, c);
+    }
+
+
+    /// <summary>
+    /// Provides the standard 6-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <param name="c">Input argument #5</param>
+    /// <param name="d">Input argument #6</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut, Object t, Object x, Object a, Object b, 
+                      Object c, Object d)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", t, x, a, b, c, d);
+    }
+
+
+    /// <summary>
+    /// Provides the standard 7-input Object interface to the MLV_SAP M-function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <param name="t">Input argument #1</param>
+    /// <param name="x">Input argument #2</param>
+    /// <param name="a">Input argument #3</param>
+    /// <param name="b">Input argument #4</param>
+    /// <param name="c">Input argument #5</param>
+    /// <param name="d">Input argument #6</param>
+    /// <param name="alpha">Input argument #7</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] MLV_SAP(int numArgsOut, Object t, Object x, Object a, Object b, 
+                      Object c, Object d, Object alpha)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "MLV_SAP", t, x, a, b, c, d, alpha);
     }
 
 

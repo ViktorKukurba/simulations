@@ -31,9 +31,9 @@ namespace LotkaVolterra
             return process.SimulateProcess();
         }
 
-        private double PerturbParam(double coef, double a, double percent = 50)
+        private double PerturbParam(double coef, double a, double percent)
         {
-            a = a + coef*percent/100;
+            a = a + a*coef*percent;
             return a;
 
         }
@@ -59,17 +59,30 @@ namespace LotkaVolterra
 
             var semiMarkovPoints = GenerateSemiMarkovProcess(finish);
             var list = new List<MLVPoint>();
-
+            var sapList = new List<MLVPoint>();
+            var alpha = Convert.ToDouble(txtAlpha.Text);
             var noPerturbedList = lvSimulation.Generate(start, finish, a, b, c, d, n0, p0);
-
+            var noPerturbedsapList = lvSimulation.SAPProcess(start, finish, a, b, c, d, n0, p0, alpha);
+            var perturbA = Convert.ToDouble(txtAx.Text);
+            var perturbB = Convert.ToDouble(txtAx.Text);
+            var perturbC = Convert.ToDouble(txtAx.Text);
+            var perturbD = Convert.ToDouble(txtAx.Text);
             foreach (var semiMarkovPoint in semiMarkovPoints)
             {
+                if (semiMarkovPoint.StartMoment == 0)
+                {
+                    semiMarkovPoint.StartMoment=0.001;
+                }
                 n0 = list.Count == 0 ? n0 : list[list.Count-1].NValue;
                 p0 = list.Count == 0 ? p0 : list[list.Count-1].PValue;
-                a = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxA.Text),10);
-                b = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxB.Text),20);
-                c = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxC.Text),-30);
-                d = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxD.Text),-40);
+                a = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxA.Text), perturbA);
+                b = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxB.Text), perturbB);
+                c = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxC.Text), perturbC);
+                d = PerturbParam(semiMarkovPoint.StateValue, Convert.ToDouble(textBoxD.Text), perturbD);
+                Console.WriteLine("{0};{1};{2};{3};{4};{5};{6};{7};{8}", semiMarkovPoint.StartMoment, semiMarkovPoint.EndMoment, a, b, c, d, n0, p0, alpha);
+                var n01 = sapList.Count == 0 ? n0 : sapList[sapList.Count - 1].NValue;
+                var p01 = sapList.Count == 0 ? p0 : sapList[sapList.Count - 1].PValue;
+                sapList.AddRange(lvSimulation.SAPProcess(semiMarkovPoint.StartMoment, semiMarkovPoint.EndMoment, a, b, c, d, n01, p01, alpha));
                 list.AddRange(lvSimulation.Generate(semiMarkovPoint.StartMoment, semiMarkovPoint.EndMoment, a, b, c, d, n0, p0));
             }
             
@@ -79,8 +92,9 @@ namespace LotkaVolterra
 
             //Creating graphs
             var graphProcess = new GraphConsructingClass();
-            graphProcess.DrawModel(zedGraph, list, noPerturbedList);
-            graphProcess.DrawProcess(zedGraphProcess, semiMarkovPoints);
+            graphProcess.DrawModel(zedGraph, list, noPerturbedList, "Модель Лотка Вольтерра");
+            //graphProcess.DrawProcess(zedGraphProcess, semiMarkovPoints);
+            graphProcess.DrawModel(zedGraphProcess, sapList, noPerturbedsapList, "Апроксимація");
         }
     }
         

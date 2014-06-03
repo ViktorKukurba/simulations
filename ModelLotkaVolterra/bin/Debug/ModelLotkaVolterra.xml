@@ -11,6 +11,8 @@
             <newpara></newpara>
             D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV.m
             <newpara></newpara>
+            D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV_SAP.m
+            <newpara></newpara>
             deployprint.m
             <newpara></newpara>
             printdlg.m
@@ -230,6 +232,236 @@
         <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
              <summary>
              Provides an interface for the MLV function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 5-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 6-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 7-input MWArrayinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <param name="alpha">Input argument #7</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 5-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 6-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 7-input MWArray interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <param name="alpha">Input argument #7</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterra.LotkaVolterra.MLV_SAP(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the MLV_SAP function in which the input and output
              arguments are specified as an array of MWArrays.
              </summary>
              <remarks>

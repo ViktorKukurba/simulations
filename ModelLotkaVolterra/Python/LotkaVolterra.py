@@ -39,6 +39,6 @@ def dX_dt(X, t=0):
 	c = 1.5
 	d = 0.75
 	""" Return the growth rate of fox and rabbit populations. """
-	return np.array([ a*X[0] -   b*X[0]*X[1] , -c*X[1] + d*b*X[0]*X[1] ])
+	return np.array([ 1/1*(a*X[0] -   b*X[0]*X[1]) , -1/1*(c*X[1] + d*b*X[0]*X[1]) ])
 
 Solve()

@@ -1,48 +1,48 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:App.config" caret="428" fromTop="8" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Python/f:LotkaVolterra.py" caret="837" fromTop="27" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Python/f:LotkaVolterraPy.py" caret="21" fromTop="1" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Python/f:test.py" caret="1719" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="17624" fromTop="15" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1698" fromTop="18" />
+    <File id="637138CA-F257-4DFB-9A57-0CF3E80988A2/f:Process.cs" caret="3913" fromTop="101" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="4089" fromTop="8" />
     <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:Program.cs" caret="453" fromTop="13" />
     <File id="637138CA-F257-4DFB-9A57-0CF3E80988A2/f:State.cs" caret="497" fromTop="17" />
-    <File id="637138CA-F257-4DFB-9A57-0CF3E80988A2/f:Process.cs" caret="1204" fromTop="11" />
     <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:TableClass.cs" caret="929" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2464" fromTop="64" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="2886" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Python/f:LotkaVolterraPy.py" caret="21" fromTop="1" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Python/f:LotkaVolterra.py" caret="837" fromTop="27" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Python/f:test.py" caret="1719" fromTop="17" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:App.config" caret="428" fromTop="8" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="2257" fromTop="26" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.Designer.cs" caret="22180" fromTop="15" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3889" fromTop="15" />
   </RecentFiles>
   <RecentEdits>
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="3200" fromTop="20" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="484" fromTop="0" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="772" fromTop="11" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="2009" fromTop="9" />
-    <File id="637138CA-F257-4DFB-9A57-0CF3E80988A2/f:State.cs" caret="764" fromTop="10" />
-    <File id="637138CA-F257-4DFB-9A57-0CF3E80988A2/f:State.cs" caret="901" fromTop="14" />
-    <File id="637138CA-F257-4DFB-9A57-0CF3E80988A2/f:State.cs" caret="74" fromTop="3" />
-    <File id="637138CA-F257-4DFB-9A57-0CF3E80988A2/f:State.cs" caret="491" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="590" fromTop="5" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="1684" fromTop="10" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2969" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2555" fromTop="8" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="6272" fromTop="10" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="4387" fromTop="23" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="2826" fromTop="7" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3001" fromTop="5" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3744" fromTop="14" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3446" fromTop="15" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3282" fromTop="14" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2184" fromTop="19" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3288" fromTop="8" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="2837" fromTop="7" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3012" fromTop="5" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3755" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3457" fromTop="15" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="3293" fromTop="14" />
     <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="525" fromTop="13" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1130" fromTop="17" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="663" fromTop="4" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1367" fromTop="20" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1128" fromTop="8" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1698" fromTop="18" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1144" fromTop="17" />
     <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="107" fromTop="3" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="1008" fromTop="6" />
-    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2758" fromTop="13" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="2026" fromTop="9" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="2026" fromTop="23" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="2380" fromTop="5" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="906" fromTop="6" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="4856" fromTop="23" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="4173" fromTop="15" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="2191" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="796" fromTop="4" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:LVModelClass.cs" caret="3786" fromTop="2" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3946" fromTop="9" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="650" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="2128" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1405" fromTop="13" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1670" fromTop="15" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="1156" fromTop="6" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4095" fromTop="15" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4597" fromTop="8" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/d:Classes/f:GraphConsructingClass.cs" caret="4410" fromTop="26" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="2643" fromTop="8" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="3468" fromTop="20" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="1095" fromTop="14" />
+    <File id="4BE39EE2-5692-4977-82E1-FC70484D10FD/f:ProgramInterface.cs" caret="4636" fromTop="14" />
   </RecentEdits>
 </RecentFiles>

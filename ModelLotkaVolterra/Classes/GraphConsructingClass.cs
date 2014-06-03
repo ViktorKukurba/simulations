@@ -17,7 +17,7 @@ namespace LotkaVolterra.Classes
         /// <param name="zedGraph">The zed graph.</param>
         /// <param name="perturbedPoints"> </param>
         /// <param name="points">The points of process.</param>
-        public void DrawModel(ZedGraphControl zedGraph, List<MLVPoint> perturbedPoints, List<MLVPoint> points)
+        public void DrawModel(ZedGraphControl zedGraph, List<MLVPoint> perturbedPoints, List<MLVPoint> points, string title)
         {
             var pane = zedGraph.GraphPane;
             pane.CurveList.Clear();
@@ -50,7 +50,7 @@ namespace LotkaVolterra.Classes
             zedGraph.Invalidate();
             // !!!
             pane.XAxis.MajorGrid.IsVisible = true;
-            pane.Title.Text = "Модель";
+            pane.Title.Text = title;
             pane.XAxis.Title.Text = "Час";
             pane.YAxis.Title.Text = "Значення";
             pane.XAxis.MajorGrid.DashOn = 10;

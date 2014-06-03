@@ -1,0 +1,6 @@
+D:\Aspiranture\Dis_project\simulations\TestModel\bin\Debug\TestModel.dll
+D:\Aspiranture\Dis_project\simulations\TestModel\bin\Debug\TestModel.pdb
+D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\Interop.Mathcad.dll
+D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\TestModel.csproj.ResolveComReference.cache
+D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\TestModel.dll
+D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\TestModel.pdb

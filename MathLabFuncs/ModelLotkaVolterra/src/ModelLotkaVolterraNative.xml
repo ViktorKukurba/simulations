@@ -11,6 +11,8 @@
             <newpara></newpara>
             D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV.m
             <newpara></newpara>
+            D:\Aspiranture\Dis_project\simulations\MathLabFuncs\MLV_SAP.m
+            <newpara></newpara>
             deployprint.m
             <newpara></newpara>
             printdlg.m
@@ -223,6 +225,222 @@
              <param name="b">Input argument #4</param>
              <param name="c">Input argument #5</param>
              <param name="d">Input argument #6</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP">
+             <summary>
+             Provides a single output, 0-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Object)">
+             <summary>
+             Provides a single output, 1-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Object,System.Object)">
+             <summary>
+             Provides a single output, 2-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 3-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 4-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 5-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 6-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 7-input Objectinterface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <param name="alpha">Input argument #7</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32,System.Object)">
+             <summary>
+             Provides the standard 1-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32,System.Object,System.Object)">
+             <summary>
+             Provides the standard 2-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 3-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 4-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 5-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 6-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:ModelLotkaVolterraNative.LotkaVolterra.MLV_SAP(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 7-input Object interface to the MLV_SAP M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="t">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <param name="a">Input argument #3</param>
+             <param name="b">Input argument #4</param>
+             <param name="c">Input argument #5</param>
+             <param name="d">Input argument #6</param>
+             <param name="alpha">Input argument #7</param>
              <returns>An Array of length "numArgsOut" containing the output
              arguments.</returns>
             

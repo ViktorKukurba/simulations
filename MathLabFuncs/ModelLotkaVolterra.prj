@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deployment-project>
-  <configuration target="target.net.component" target-name=".NET Assembly" name="ModelLotkaVolterra" location="D:\Aspiranture\Dis_project\simulations\MathLabFuncs" file="D:\Aspiranture\Dis_project\simulations\MathLabFuncs\ModelLotkaVolterra.prj" build-checksum="490226279">
+  <configuration target="target.net.component" target-name=".NET Assembly" name="ModelLotkaVolterra" location="D:\Aspiranture\Dis_project\simulations\MathLabFuncs" file="D:\Aspiranture\Dis_project\simulations\MathLabFuncs\ModelLotkaVolterra.prj" build-checksum="3231897196">
     <param.project.name>D:\Aspiranture\Dis_project\simulations\MathLabFuncs\ModelLotkaVolterra.prj</param.project.name>
     <param.target.type>.NET Assembly</param.target.type>
     <param.appname>ModelLotkaVolterra</param.appname>
@@ -39,6 +39,7 @@
       <entity.package name="">
         <entity.class name="LotkaVolterra">
           <file>${PROJECT_ROOT}\MLV.m</file>
+          <file>${PROJECT_ROOT}\MLV_SAP.m</file>
         </entity.class>
       </entity.package>
     </fileset.classes>
@@ -53,7 +54,6 @@
     <matlab>
       <root>C:\Program Files\MATLAB\R2010b</root>
       <path>
-        <directory>D:\Aspiranture\Dis_project\simulations\MathLabFuncs</directory>
         <directory>C:\Users\Viktor\Documents\MATLAB</directory>
         <directory>${MATLAB_ROOT}\toolbox\matlab\general</directory>
         <directory>${MATLAB_ROOT}\toolbox\matlab\ops</directory>

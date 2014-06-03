@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?validation-md5-digest c198a2fe9fc33434a3f7973b58251531?>
+<?validation-md5-digest 01d21d67260a63243e73d2710ad5f61e?>
 <worksheet version="3.0.3" xmlns="http://schemas.mathsoft.com/worksheet30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ws="http://schemas.mathsoft.com/worksheet30" xmlns:ml="http://schemas.mathsoft.com/math30" xmlns:u="http://schemas.mathsoft.com/units10" xmlns:p="http://schemas.mathsoft.com/provenance10">
 	<pointReleaseData/>
 	<metadata>
@@ -13,9 +13,9 @@
 			<revisedBy>Viktor</revisedBy>
 		</userData>
 		<identityInfo>
-			<revision>35</revision>
+			<revision>36</revision>
 			<documentID>37C514F1-6387-4ED4-9CA7-00FDF262DB2A</documentID>
-			<versionID>C292E823-24ED-46CA-A1F6-3BC546608205</versionID>
+			<versionID>D663D3CF-79F5-4C6F-821D-D96D8A5CC3DB</versionID>
 			<parentVersionID>00000000-0000-0000-0000-000000000000</parentVersionID>
 			<branchID>00000000-0000-0000-0000-000000000000</branchID>
 		</identityInfo>
@@ -107,7 +107,7 @@
 		</editor>
 		<fileFormat image-type="image/png" image-quality="75" save-numeric-results="true" exclude-large-results="false" save-text-images="false" screen-dpi="96"/>
 		<miscellaneous>
-			<handbook handbook-region-tag-ub="196" can-delete-original-handbook-regions="true" can-delete-user-regions="true" can-print="true" can-copy="true" can-save="true" file-permission-mask="4294967295"/>
+			<handbook handbook-region-tag-ub="193" can-delete-original-handbook-regions="true" can-delete-user-regions="true" can-print="true" can-copy="true" can-save="true" file-permission-mask="4294967295"/>
 		</miscellaneous>
 	</settings>
 	<regions>
@@ -140,10 +140,10 @@
 			<math error="This variable is undefined." optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="478410308" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491235852" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="453733788" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491235452" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -162,10 +162,10 @@
 		<region region-id="173" left="24" top="60" width="114.75" height="40.5" align-x="68.25" align-y="84" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="223655740" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="222152980" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480383796" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="222047732" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -224,10 +224,10 @@
 		<region region-id="174" left="174" top="66" width="114.75" height="40.5" align-x="219" align-y="90" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="453733788" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491235452" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="478410308" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491235852" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -285,10 +285,10 @@
 		<region region-id="175" left="24" top="114" width="138.75" height="40.5" align-x="71.25" align-y="138" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="453728148" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491235492" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="479448612" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491355868" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1344,10 +1344,10 @@
 			<math error="This variable is undefined." optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480377436" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491355668" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="478403308" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491235852" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1405,10 +1405,10 @@
 			<math error="This variable is undefined." optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480378676" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491356508" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480377076" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491356468" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1475,29 +1475,32 @@
 			</math>
 			<rendering item-idref="19"/>
 		</region>
-		<region region-id="190" left="36" top="591" width="39.75" height="12.75" align-x="57.75" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="193" left="36" top="591" width="67.5" height="12.75" align-x="71.25" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math error="This variable is undefined." optimize="false" disable-calc="false">
-				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<ml:provenance expr-id="1">
-						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480377396" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
-							<hash/>
-						</originRef>
-						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480378676" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
-							<hash/>
-						</parentRef>
-						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
-						<originComment xmlns="http://schemas.mathsoft.com/provenance10"/>
-						<contentHash xmlns="http://schemas.mathsoft.com/provenance10">3617813bd0fe1cb4d7a6c10a06faa0ed</contentHash>
-						<ml:apply>
-							<ml:id xml:space="preserve">λ</ml:id>
-							<ml:id xml:space="preserve">t</ml:id>
-						</ml:apply>
-					</ml:provenance>
-				</ml:eval>
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">lambda</ml:id>
+					<ml:parens>
+						<ml:provenance expr-id="1">
+							<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491356148" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+								<hash/>
+							</originRef>
+							<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491356508" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+								<hash/>
+							</parentRef>
+							<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
+							<originComment xmlns="http://schemas.mathsoft.com/provenance10"/>
+							<contentHash xmlns="http://schemas.mathsoft.com/provenance10">3617813bd0fe1cb4d7a6c10a06faa0ed</contentHash>
+							<ml:apply>
+								<ml:id xml:space="preserve">λ</ml:id>
+								<ml:id xml:space="preserve">t</ml:id>
+							</ml:apply>
+						</ml:provenance>
+					</ml:parens>
+				</ml:define>
 			</math>
 			<rendering item-idref="20">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="15.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="48" top="0.75" width="15.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -1505,10 +1508,10 @@
 			<math error="This variable is undefined." optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480378356" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491356428" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="478411588" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491235332" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1543,10 +1546,10 @@
 			<math error="This variable is undefined." optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480378596" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491356348" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="480377436" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="16F8A7C4-88D1-4921-B8DE-C0A0F71D8683" version-id="11853D27-16C9-426B-833D-1875E9A16A54" branch-id="00000000-0000-0000-0000-000000000000" revision-num="491355668" is-modified="true" region-id="0" href="D:\Viktor\AM-32\Дипломна\mn.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2048,14 +2051,19 @@ GWsmPWf1nwJYgXFHMc/rEAB8PgbsRCHvDysxGBHlD45tIaWiyRIEC/YZpRsnUFrscZ37nmzO
 5MsFZQBGHLyjkajHnhVmI1W/xOCWArcyVSJ75HzOujNLPyJxs2wmuJq1JA/RLwmIklVesRxe
 TmXNwg+f/6GsD9EvCYiUFWA44S4cASsdEF2D6mF8vua8Fkym7o977pc0XCBrpVICIX4B7G2v
 2RHmEgUAAAAASUVORK5CYII=</item>
-		<item item-id="20">iVBORw0KGgoAAAANSUhEUgAAADUAAAARCAYAAAB92+RQAAAAAXNSR0IArs4c6QAAAARnQU1B
-AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVEhL7ZbLDYMwDIYzDyNErMAa
-uXWDjsAhczAAYoIuwa0DoKJKvbq2Ca8QKEp5FfWTghQrCD5+ExBwQv5Sv8K5pR5ZhjMBzzA0
-lTFSUELh0QbrUkNuZnvSS6q83VisSBJTsSEhCbp756kCVRvmGqRTeFsG7VdGEYu97ndTaUmV
-aAWYHLS0aigp+os2x/1OoRTLdaEUeu1VCQlcy6ONC+tWmhvjlOL2wxvl98yQa+lIgNrRTs+V
-aI31ILpjIt3uujkMVnHb0cn1MJCUHDx+t5R7rT/fSwUBFNdrI1dcLlxfRmqHpEgIzzQzbMM4
-5jntisu0nx/eUvV3yt71GtHBRlFBAnzBxmL5jcJbag6zElhhS19Vqmq3iRSO+vH9DLXXyG/S
-AYQID6mjA/AGLcAWKzRNwVoAAAAASUVORK5CYII=</item>
+		<item item-id="20">iVBORw0KGgoAAAANSUhEUgAAAFoAAAARCAYAAABdN7utAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVFhH7VbLkYMwDHU9KcGTFtIG
+t3SQEnKgjhTApII0wS0FMMnszF69kvBHFjaGhOUCb4bEPFuS/SwZK7NjFexCr4Rd6JWwC70S
+gtBtbbTSpm7t+6eY42epmLPRmEpV8GvM634HFZT5OR77riyCTQzgdW3iJQw5KzQ6URDv20XP
+8bNUzLnAuHHM9+NBYne3m2UkhjamqUzlVKeEEZsguM1ldFOpIBDD+3QisX+fT8sEDG1aU2vB
+gfBKOmZcVmh0rijj4HEO0BBKoqk18RoGt6xNcH4a/O/tfR+hn6T3XYopQf7TYhWBtoMyZwC/
+JDjHwEbM308EeZk0gUsLzZ0TjyXgSt0KRzxv2zKxPG5IsA/CkJh840ZjjkFuGHsyu0BJMbJD
+dHSAPZ3bFmmbXgtJp6rFceNHBwmBk+ciTmnHfjBYn9XirJsSc0GgaHF1BdCRAXH9Y5G2SQud
+Guu4jNA2e8kTthcSmvrYBKOxmZhZfJbRWaEPB9NdLl7w7nwm/l+Fxs4w2S+F5n1OnOiIKMRc
+EHGMABQZxXXorld6x9tI2iYt9ISjg2cHLJAEcO/20XCdsWOqJoxHJzQZHENRZKYJwbhv+FD0
+7VxM/hGysOPkgiYBbYVPd4+Wtw0vfsIGgQLSHP1EcN1xJXMubONGkMq6EibZsKucB+M2JzSs
+HspeZl4JBRuqslTlBm6DQiOwpIUwReRsUt+TIbdRodeGMX92B2aIaHviPgAAAABJRU5ErkJg
+gg==</item>
 		<item item-id="21">iVBORw0KGgoAAAANSUhEUgAAAGkAAAA0CAYAAACJkhYTAAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMLSURBVHhe7ZrBbawwEIbpIi1EKQGl
 hbThWzrIJfccqCMFoFSQJrilgNWLIr2rn2cwxjYelg1vgVn9n4QUZlm0+MvM2N6tLDg8kKQA
