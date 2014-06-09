@@ -69,6 +69,7 @@ namespace TestAnalyser
             _events = _poissonGenerator.GenerateExpEvents();
             _testProcess = _poissonGenerator.GeneratePoisson(null);
             DisplayTestData();
+            InitModelState();
         }
 
         private void DisplayTestData()
@@ -177,8 +178,8 @@ namespace TestAnalyser
         {
             testModelProgress.Background = Brushes.LightGray;
             testModelStatuslbl.Foreground = Brushes.Green;
-            testModelProgress.Value = 30;
-            testModelStatuslbl.Content = "Ініціалізація";
+            testModelProgress.Value = 0;
+            testModelStatuslbl.Content = "Статус не розв'язано";
             testModelResultBox.Visibility = Visibility.Collapsed;
             SOPResultBox.Visibility = Visibility.Collapsed;
             SOPBox.Visibility = Visibility.Collapsed;
