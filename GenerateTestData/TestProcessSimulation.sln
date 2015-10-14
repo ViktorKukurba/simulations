@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateTestData", "GenerateTestData.csproj", "{4BE39EE2-5692-4977-82E1-FC70484D10FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProductModel", "..\TestModel\TestProductModel.csproj", "{592734C1-E5EB-43A6-B73D-324673E4C9EB}"
@@ -38,6 +38,7 @@ Global
 		{592734C1-E5EB-43A6-B73D-324673E4C9EB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{592734C1-E5EB-43A6-B73D-324673E4C9EB}.Release|x86.ActiveCfg = Release|Any CPU
 		{0833F79F-5272-439B-AC82-4F60A6F4F2B2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0833F79F-5272-439B-AC82-4F60A6F4F2B2}.Debug|Any CPU.Build.0 = Debug|x86
 		{0833F79F-5272-439B-AC82-4F60A6F4F2B2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{0833F79F-5272-439B-AC82-4F60A6F4F2B2}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{0833F79F-5272-439B-AC82-4F60A6F4F2B2}.Debug|x86.ActiveCfg = Debug|x86

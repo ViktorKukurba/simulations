@@ -33,6 +33,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.zedGraph = new ZedGraph.ZedGraphControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtDx = new System.Windows.Forms.TextBox();
+            this.txtCx = new System.Windows.Forms.TextBox();
+            this.txtBx = new System.Windows.Forms.TextBox();
+            this.txtAx = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtAlpha = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,16 +63,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.graphPN = new ZedGraph.ZedGraphControl();
             this.zedGraphProcess = new ZedGraph.ZedGraphControl();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtAx = new System.Windows.Forms.TextBox();
-            this.txtBx = new System.Windows.Forms.TextBox();
-            this.txtDx = new System.Windows.Forms.TextBox();
-            this.txtCx = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBoxJ = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -102,12 +105,14 @@
             this.zedGraph.ScrollMinX = 10D;
             this.zedGraph.ScrollMinY = 10D;
             this.zedGraph.ScrollMinY2 = 10D;
-            this.zedGraph.Size = new System.Drawing.Size(968, 252);
+            this.zedGraph.Size = new System.Drawing.Size(652, 252);
             this.zedGraph.TabIndex = 2;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.textBoxJ);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
@@ -142,6 +147,74 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметри моделювання";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(305, 45);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(24, 13);
+            this.label15.TabIndex = 66;
+            this.label15.Text = "d(x)";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(305, 19);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(24, 13);
+            this.label14.TabIndex = 65;
+            this.label14.Text = "c(x)";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(170, 19);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(24, 13);
+            this.label13.TabIndex = 64;
+            this.label13.Text = "a(x)";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(171, 45);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(24, 13);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "b(x)";
+            // 
+            // txtDx
+            // 
+            this.txtDx.Location = new System.Drawing.Point(335, 45);
+            this.txtDx.Name = "txtDx";
+            this.txtDx.Size = new System.Drawing.Size(35, 20);
+            this.txtDx.TabIndex = 62;
+            this.txtDx.Text = "-0,2";
+            // 
+            // txtCx
+            // 
+            this.txtCx.Location = new System.Drawing.Point(335, 16);
+            this.txtCx.Name = "txtCx";
+            this.txtCx.Size = new System.Drawing.Size(35, 20);
+            this.txtCx.TabIndex = 61;
+            this.txtCx.Text = "0,5";
+            // 
+            // txtBx
+            // 
+            this.txtBx.Location = new System.Drawing.Point(200, 42);
+            this.txtBx.Name = "txtBx";
+            this.txtBx.Size = new System.Drawing.Size(35, 20);
+            this.txtBx.TabIndex = 60;
+            this.txtBx.Text = "-0,3";
+            // 
+            // txtAx
+            // 
+            this.txtAx.Location = new System.Drawing.Point(200, 16);
+            this.txtAx.Name = "txtAx";
+            this.txtAx.Size = new System.Drawing.Size(35, 20);
+            this.txtAx.TabIndex = 59;
+            this.txtAx.Text = "0,5";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -171,9 +244,9 @@
             // generatebtn
             // 
             this.generatebtn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.generatebtn.Location = new System.Drawing.Point(261, 70);
+            this.generatebtn.Location = new System.Drawing.Point(308, 70);
             this.generatebtn.Name = "generatebtn";
-            this.generatebtn.Size = new System.Drawing.Size(106, 21);
+            this.generatebtn.Size = new System.Drawing.Size(59, 39);
             this.generatebtn.TabIndex = 38;
             this.generatebtn.Text = "Моделювати";
             this.generatebtn.UseVisualStyleBackColor = false;
@@ -330,6 +403,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.graphPN);
             this.groupBox3.Controls.Add(this.zedGraphProcess);
             this.groupBox3.Controls.Add(this.zedGraph);
             this.groupBox3.Location = new System.Drawing.Point(9, 140);
@@ -338,6 +412,22 @@
             this.groupBox3.TabIndex = 41;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Візуалізація моделювання";
+            // 
+            // graphPN
+            // 
+            this.graphPN.AutoScroll = true;
+            this.graphPN.AutoSize = true;
+            this.graphPN.Location = new System.Drawing.Point(668, 16);
+            this.graphPN.Name = "graphPN";
+            this.graphPN.ScrollGrace = 10D;
+            this.graphPN.ScrollMaxX = 10D;
+            this.graphPN.ScrollMaxY = 10D;
+            this.graphPN.ScrollMaxY2 = 10D;
+            this.graphPN.ScrollMinX = 10D;
+            this.graphPN.ScrollMinY = 10D;
+            this.graphPN.ScrollMinY2 = 10D;
+            this.graphPN.Size = new System.Drawing.Size(310, 252);
+            this.graphPN.TabIndex = 4;
             // 
             // zedGraphProcess
             // 
@@ -366,73 +456,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Значення моделі";
             // 
-            // txtAx
+            // label16
             // 
-            this.txtAx.Location = new System.Drawing.Point(200, 16);
-            this.txtAx.Name = "txtAx";
-            this.txtAx.Size = new System.Drawing.Size(35, 20);
-            this.txtAx.TabIndex = 59;
-            this.txtAx.Text = "0,5";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(245, 73);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(9, 13);
+            this.label16.TabIndex = 68;
+            this.label16.Text = "j";
             // 
-            // txtBx
+            // textBoxJ
             // 
-            this.txtBx.Location = new System.Drawing.Point(200, 42);
-            this.txtBx.Name = "txtBx";
-            this.txtBx.Size = new System.Drawing.Size(35, 20);
-            this.txtBx.TabIndex = 60;
-            this.txtBx.Text = "-0,3";
-            // 
-            // txtDx
-            // 
-            this.txtDx.Location = new System.Drawing.Point(335, 45);
-            this.txtDx.Name = "txtDx";
-            this.txtDx.Size = new System.Drawing.Size(35, 20);
-            this.txtDx.TabIndex = 62;
-            this.txtDx.Text = "-0,2";
-            // 
-            // txtCx
-            // 
-            this.txtCx.Location = new System.Drawing.Point(335, 16);
-            this.txtCx.Name = "txtCx";
-            this.txtCx.Size = new System.Drawing.Size(35, 20);
-            this.txtCx.TabIndex = 61;
-            this.txtCx.Text = "0,5";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(171, 45);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 13);
-            this.label10.TabIndex = 63;
-            this.label10.Text = "b(x)";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(170, 19);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(24, 13);
-            this.label13.TabIndex = 64;
-            this.label13.Text = "a(x)";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(305, 19);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(24, 13);
-            this.label14.TabIndex = 65;
-            this.label14.Text = "c(x)";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(305, 45);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(24, 13);
-            this.label15.TabIndex = 66;
-            this.label15.Text = "d(x)";
+            this.textBoxJ.Location = new System.Drawing.Point(264, 70);
+            this.textBoxJ.Name = "textBoxJ";
+            this.textBoxJ.Size = new System.Drawing.Size(35, 20);
+            this.textBoxJ.TabIndex = 67;
+            this.textBoxJ.Text = "0";
             // 
             // ProgramInterface
             // 
@@ -503,6 +542,9 @@
         private System.Windows.Forms.TextBox txtCx;
         private System.Windows.Forms.TextBox txtBx;
         private System.Windows.Forms.TextBox txtAx;
+        private ZedGraph.ZedGraphControl graphPN;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBoxJ;
     }
 }
 

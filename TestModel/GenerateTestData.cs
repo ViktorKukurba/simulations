@@ -133,13 +133,39 @@ namespace TestProductModel
                              {
                                  TimePoint = index*Interval,
                                  Value = val,
-                                 SumValue = _processPoisson.Sum(_=>_.Value) + val
+                                 SumValue = _processPoisson.Sum(_=>_.Value) + val,
+                                 Number = k
                              });
             }
             double sum1 = _processExpEvents.Sum(_ => _.Value);
             double sum = _processPoisson.Sum(_ => _.Value);
             _processPoisson.ForEach(_ => { _.EmpValue = _.SumValue / sum; });
             return _processPoisson;
+        }
+
+        public List<PoissonPoint> GetIntensityData(double a, double b, double s)
+        {
+            var list = new List<PoissonPoint>() {
+                new PoissonPoint()
+                {
+                    TimePoint = 0,
+                    EmpValue = 0
+                }
+
+            };
+
+            for (int i = 2; i < _processPoisson.Count; i++)
+            {
+                var t = _processPoisson[i].TimePoint;
+
+                list.Add(new PoissonPoint()
+                {
+                    TimePoint = t,
+                    EmpValue = a*Math.Pow(b,t + 1)*Math.Pow(s,t)*Math.Exp(-t*b)
+                });
+            }
+
+            return list;
         }
 
         private IDistribution CreateDistribution(string distribution, double a, double b)

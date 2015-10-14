@@ -59,24 +59,31 @@ from numpy import *
 #import pylab as p
 from scipy import integrate
 
+#def LotkaVolterra(start, end, a, b, c, d, nStart, pStart):
 def LotkaVolterra():
 	# Definition of parameters
 	a = 1.
-	b = 0.1
-	c = 1.5
-	d = 0.75
+	b = 1
+	c = 1
+	d = 1
 
-	def dX_dt(X, t=0):
+	def dX_dt(X, t=1):
 		""" Return the growth rate of fox and rabbit populations. """
 		return array([ a*X[0] -   b*X[0]*X[1] , -c*X[1] + d*b*X[0]*X[1] ])
 
-	t = linspace(0, 10, 30)              # time
-	print t
-	X0 = array([10, 5])                     # initials conditions: 10 rabbits and 5 foxes
+	print 'start'
+	print 'start-2'
+
+	t = linspace(0, 15000,  1000)              # time
+	X0 = array([2, 3])                     # initials conditions: 10 rabbits and 5 foxes
+	print 't-2'
 	X, infodict = integrate.odeint(dX_dt, X0, t, full_output=True)
-	print X
+	print 't-3'
+
+	#print X
 	infodict['message']
 	rabbits, foxes = X.T
+
 	print rabbits
 	#f1 = p.figure()
 	#p.plot(t, rabbits, 'r-', label='Rabbits')
@@ -86,7 +93,9 @@ def LotkaVolterra():
 	#p.xlabel('time')
 	#p.ylabel('population')
 	#p.title('Evolution of fox and rabbit populations')
-	#f1.savefig('LV_3.png')
+	#f1.savefig('test.png')
+
+	print foxes
 	return t, rabbits, foxes
 
-LotkaVolterra()
+#LotkaVolterra()

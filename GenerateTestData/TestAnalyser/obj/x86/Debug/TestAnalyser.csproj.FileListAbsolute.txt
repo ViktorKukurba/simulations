@@ -17,3 +17,7 @@ D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\obj\x86\Deb
 D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\obj\x86\Debug\TestAnalyser.csproj.GenerateResource.Cache
 D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\obj\x86\Debug\TestAnalyser.exe
 D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\obj\x86\Debug\TestAnalyser.pdb
+D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\bin\Debug\TestAnalyser.exe.manifest
+D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\bin\Debug\TestAnalyser.application
+D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\obj\x86\Debug\TestAnalyser.exe.manifest
+D:\Aspiranture\Dis_project\simulations\GenerateTestData\TestAnalyser\obj\x86\Debug\TestAnalyser.application

@@ -102,5 +102,53 @@ namespace LotkaVolterra.Classes
             pane.XAxis.MinorGrid.DashOn = 1;
             pane.XAxis.MinorGrid.DashOff = 2;
         }
+
+        /// <summary>
+        /// Draws the random events.
+        /// </summary>
+        /// <param name="zedGraph">The zed graph.</param>
+        /// <param name="perturbedPoints"> </param>
+        /// <param name="points">The points of process.</param>
+        public void DrawPN(ZedGraphControl zedGraph, List<MLVPoint> perturbedPoints, List<MLVPoint> points, string title)
+        {
+            var pane = zedGraph.GraphPane;
+            pane.CurveList.Clear();
+            var list = new PointPairList();
+            var perturbedList = new PointPairList();
+
+            foreach (var point in points)
+            {
+                list.Add(point.PValue, point.NValue);
+            }
+
+            foreach (var perturbedPoint in perturbedPoints)
+            {
+                perturbedList.Add(perturbedPoint.PValue, perturbedPoint.NValue);
+            }
+
+            // Створюємо ламану "переходи", 
+            LineItem myCurve = pane.AddCurve("значення не збуреного N P", list, Color.LightBlue, SymbolType.Circle);
+            pane.AddCurve("значення збуреного N P", perturbedList, Color.Blue, SymbolType.Circle);
+            // Викликаємо метод AxisChange (), щоб обновити дані на осях осях. 
+            zedGraph.AxisChange();
+            // Обновляємо графік
+            zedGraph.Invalidate();
+            // !!!
+            pane.XAxis.MajorGrid.IsVisible = true;
+            pane.Title.Text = title;
+            pane.XAxis.Title.Text = "P";
+            pane.YAxis.Title.Text = "N";
+            pane.XAxis.MajorGrid.DashOn = 10;
+            pane.XAxis.MajorGrid.DashOff = 5;
+            pane.YAxis.MajorGrid.IsVisible = true;
+            pane.YAxis.MajorGrid.DashOn = 10;
+            pane.YAxis.MajorGrid.IsZeroLine = false;
+            pane.YAxis.MinorGrid.IsVisible = true;
+            pane.YAxis.MinorGrid.DashOn = 1;
+            pane.YAxis.MinorGrid.DashOff = 2;
+            pane.XAxis.MinorGrid.IsVisible = true;
+            pane.XAxis.MinorGrid.DashOn = 1;
+            pane.XAxis.MinorGrid.DashOff = 2;
+        }
     }
 }

@@ -34,9 +34,13 @@ namespace TestAnalyser
             poissonChart.DataContext = new List<PoissonPoint> { new PoissonPoint() };
             eventsChart.DataContext = new List<PoissonPoint> { new PoissonPoint() };
             empireChart.DataContext = new List<PoissonPoint> { new PoissonPoint() };
+            intensityChart.DataContext = new List<PoissonPoint> { new PoissonPoint() };
+            intensitySOPChart.DataContext = new List<PoissonPoint> { new PoissonPoint() };
             SOPBox.Visibility = Visibility.Collapsed;
             SOPResultBox.Visibility = Visibility.Collapsed;
             testModelResultBox.Visibility = Visibility.Collapsed;
+            intensityChart.Visibility = Visibility.Collapsed;
+            intensitySOPChart.Visibility = Visibility.Collapsed;
         }
 
         /// <summary>
@@ -118,6 +122,7 @@ namespace TestAnalyser
                 {
                     DisplayModelData(mathCad);
                     testModelResultBox.Visibility = Visibility.Visible;
+                    intensityChart.Visibility = Visibility.Visible;
                 }
                 catch (Exception exp)
                 {
@@ -157,6 +162,10 @@ namespace TestAnalyser
             testModelTotalResult.Content = "Total : " + _modelData.Total;
             testModelProgress.Value = 100;
             testModelStatuslbl.Content = "Статус розв'язано";
+            sopStatuslbl.Content = "Статус не розв'язано";
+            sopProgress.Value = 0;
+            var r = _poissonGenerator.GetIntensityData(_modelData.Alpha, _modelData.Beta, _modelData.S);
+            intensityChart.DataContext = r;
             testModelResultBox.Visibility = Visibility.Visible;
             SOPBox.Visibility = Visibility.Visible;
         }
@@ -172,6 +181,8 @@ namespace TestAnalyser
             sopProgress.Value = 100;
             sopStatuslbl.Foreground = Brushes.Green;
             sopStatuslbl.Content = "Статус розв'язано";
+            var r = _poissonGenerator.GetIntensityData(_modelData.Alpha, _modelData.Beta, sopData.S);
+            intensitySOPChart.DataContext = r;
         }
 
         private void InitModelState()
@@ -199,6 +210,7 @@ namespace TestAnalyser
                 {
                     DisplaySOPData(mathCad);
                     SOPResultBox.Visibility = Visibility.Visible;
+                    intensitySOPChart.Visibility = Visibility.Visible;
                 }
                 catch (Exception exp)
                 {

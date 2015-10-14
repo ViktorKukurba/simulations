@@ -1,1 +1,84 @@
- 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TestProductModel.ExponentialDistribution" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAIAAAAAAAAA=</HashCode>
+      <FileName>DistributionClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProductModel.WeibullDistribution" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAIAAAAAAAAA=</HashCode>
+      <FileName>DistributionClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProductModel.ErlangDistribution" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAIAAAAAAAAA=</HashCode>
+      <FileName>DistributionClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProductModel.DistributionClass" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAIIAQAIAEAAAIgAAAAAAAIAAQAAgAQAAgABAAAI=</HashCode>
+      <FileName>DistributionClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProductModel.Generator">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAACAAACAAAAAIAABAAIAAAEAAEAAAAAAAAAABA=</HashCode>
+      <FileName>GenerateTestData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProductModel.PoissonPoint" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAIAAAAAAAAAAEAAAAAAEAIAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>GenerateTestData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProductModel.MathCadIntegration">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAgAAAAAAAAAAACAAAAABCAAAAAAAAAI=</HashCode>
+      <FileName>MathCadIntegration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProductModel.TestModelMathCad">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>MathCadIntegration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProductModel.SOPMathCad">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MathCadIntegration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProductModel.TestModel">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAQBAAAAAAAACAAAA=</HashCode>
+      <FileName>MathCadIntegration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TestProductModel.IDistribution">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAIAAAAAAAAA=</HashCode>
+      <FileName>DistributionClass.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

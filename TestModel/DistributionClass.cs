@@ -109,7 +109,7 @@ namespace TestProductModel
             {
                 Parameters[1] = 1;
             }
-            return Math.Pow(-time / Parameters[0] * Math.Log(RandomValue.Instance().NextDouble()), (time / Parameters[1]));
+            return Math.Pow(-time / Parameters[0] * Math.Log(RandomValue.Instance().NextDouble()), (1 / Parameters[1]));
         }
     }
 

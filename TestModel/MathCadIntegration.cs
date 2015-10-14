@@ -36,12 +36,10 @@ namespace TestProductModel
             var t = ((MatrixValue)_mathCadWorkSheet.GetValue("t"));
             var time = ((MatrixValue)_mathCadWorkSheet.GetValue("time"));
             var n = _mathCadWorkSheet.GetValue("n");
-            Console.WriteLine("time: {0};", time.Type);
             try
             {
                 var a = _mathCadWorkSheet.GetValue("alpha");
                 var b = _mathCadWorkSheet.GetValue("beta");
-                Console.WriteLine("a: {0}; b: {1};", a, b);
             }
             catch(InvalidCastException e)
             {
@@ -54,12 +52,6 @@ namespace TestProductModel
             finally
             {
                 dynamic mk = _mathCadWorkSheet.GetValue(variable);
-                Console.WriteLine("alfa: {0}; n {1}", (_mathCadWorkSheet.GetValue("alfa") as INumericValue).Real, n);
-                //Console.WriteLine("{0}: {1}", "t", ().ToString());MWNumericArray
-                Console.WriteLine("{0}: {1};{2};", variable, t.Type, ((INumericValue) t.GetElement(0, 0)).Real);
-                Console.WriteLine("{0}: {1}", variable, (mk).ToString());
-                Console.WriteLine("{0}: {1};{2};{3}", "t", t.Cols, t.Rows, ((INumericValue)t.GetElement(2, 0)).Real);
-                //Console.WriteLine("C = A + B = {0}", (_mathCadWorkSheet.GetValue("C") as INumericValue).Real);
                 _mathCad.Visible = true;
                 _mathCad.ActiveWorksheet.Close(Mathcad.MCSaveOption.mcDiscardChanges);
                 _mathCad.Quit(Mathcad.MCSaveOption.mcDiscardChanges);
@@ -83,9 +75,6 @@ namespace TestProductModel
                     S = ((INumericValue)_mathCadWorkSheet.GetValue("es")).Real,
                     Total = ((INumericValue)_mathCadWorkSheet.GetValue("TotalErr")).Real
                 };
-                //var l = _mathCadWorkSheet.GetValue("lambda");
-                //Console.WriteLine("Logger: {0};", l);
-                //Console.WriteLine("Logger: {0};", l.Type);
             }
             catch (InvalidCastException e)
             {

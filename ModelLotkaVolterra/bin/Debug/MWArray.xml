@@ -37,7 +37,7 @@
             </Remarks>
             <threadsafety static="true" instance="false"/>
         </member>
-        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.mclmcrInitialize">
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.mclmcrInitialize2(System.Int32)">
             <summary internal= "true">
             Internal function
             </summary>
@@ -248,7 +248,7 @@
             <summary internal= "true">
             Internal Constructor
             </summary>
-            <param name="pMXArray">Pointer to a native mxArray</param>
+            <param name="hMXArray">Pointer to a native mxArray</param>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.DisposeArray(System.Object)">
             <summary>
@@ -272,7 +272,17 @@
             This method allows for the explicit lifecycle control of an <c>MWArray</c> and its native MATLAB array.
             </remarks>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:MathWorks.MATLAB.NET.Arrays.MWArray.Dispose(System.Boolean)" -->
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.Dispose(System.Boolean)">
+            <summary internal= "true">
+            Internal dispose function
+            </summary>
+            <remarks>
+            Derived classes should override this method to free their resources. 
+            The base class dispose method should then be called
+            (see on-line doc "Implementing a Dispose Method").
+            </remarks>
+            <exclude/>
+        </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.op_Implicit(System.Double)~MathWorks.MATLAB.NET.Arrays.MWArray">
             <summary>
             Implicit cast from a native double scalar value to an <c>MWNumericArray</c>.
@@ -314,12 +324,26 @@
             <param name="hMXArray">A pointer to a native MATLAB array</param>
             <returns>A properly typed MWArray</returns>
         </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.IsMWArray(System.Object)">
+            <summary>
+            Checks if an object is an MWArray or one of it's subclasses
+            </summary>
+            <param name="objIn">Input argument passed in as an object</param>
+            <returns></returns>
+        </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.ConvertObjectToMWArray(System.Object)">
             <summary>
             Internal function - Returns a derived type of <c>MWArray</c> depending on the contents of input object
             </summary>
             <param name="objIn"></param>       
             <returns></returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.GetMWStructArrayFromIDictionary(System.Collections.IDictionary)">
+            <summary>
+            private method that converts a Hashtable/Dictionary{T,V} to an MWStructArray
+            </summary>
+            <param name="objIn">Hashtable/Dictionary{T,V} to be converted</param>
+            <returns>MWStructArray representing the Hashtable </returns>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.SetMXArray(MathWorks.MATLAB.NET.Utility.MWSafeHandle,MathWorks.MATLAB.NET.Arrays.MWArrayType,System.Int32,System.Int32[])">
             <summary internal= "true">
@@ -433,6 +457,63 @@
             <param name="index">The index of the current subscript (always 0 for external caller)</param>
             <returns>A native integer array of subscripts</returns>
             <exclude/>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.ConvertMatrixToVector``1(``0[0:,0:])">
+            <summary>
+            Convert a Matrix to a Vector for arbitrary type T
+            </summary>
+            <typeparam name="T"> Type of Matrix</typeparam>
+            <param name="src"> Input Matrix</param>
+            <returns>Vector of type T</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.PopulateTypeMap">
+            <summary>
+            Populates a Dictionary with convertible types
+            </summary>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.ConvertToType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.ConvertToNativeTypes(MathWorks.MATLAB.NET.Arrays.MWArray[],System.Type[])">
+            <summary>
+            This method converts an array of MWArray to types specified by the user. This method should only be called from
+            the generated implementation
+            </summary>
+            <param name="src">array of MWArray</param>
+            <param name="specifiedTypes">output types specified by the user</param>
+            <returns>object array with the converted types on success, otherwise throws an ArgumentException</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.AllocateNativeArray(System.Type,System.Int32[]@)">
+            <summary>
+            Thise helper method creates a row major native array of the specified type.
+            </summary>
+            <param name="t"></param>
+            <param name="nativeArrayDims"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.NetDimensionToMATLABDimension(System.Int32[])">
+            <summary>
+            Helper method to change dimension ordering from .Net to MATLAB
+            In .Net dimensions grow to the left, i.e  the outermost dimension is the highest dimension.
+            In MATLAB the dimension grows to the right, i.e the innermost dimension is the highest one.
+            For example page(n) X .. X page(1) X row X col in .Net becomes row X col X page(1) X ..X page(n) in MATLAB
+            </summary>
+            <param name="dimensions">dimensions ordered according to .Net</param>
+            <returns>dimensions ordered according to MATLAB</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWArray.MATLABDimensionToNetDimension(System.Int32[])">
+            <summary>
+            Helper method to change dimension ordering from MATLAB to .Net
+            In .Net dimensions grow to the left, i.e  the outermost dimension is the highest dimension.
+            In MATLAB the dimension grows to the right, i.e the innermost dimension is the highest one.
+            For example page(n) X .. X page(1) X row X col in .Net becomes row X col X page(1) X ..X page(n) in MATLAB
+            </summary>
+            <param name="dimensions">dimensions ordered according to MATLAB</param>
+            <returns>dimensions ordered according to .Net</returns>
         </member>
         <member name="F:MathWorks.MATLAB.NET.Arrays.MWArray.nativeGCEnabled">
             <summary>
@@ -1148,6 +1229,13 @@
             <param name="boolArray">A boolean array containing the initialization data for the logical array.</param>
             <param name="columnMajorData">A boolean flag indicating if data in boolArray is in the MATLAB column major order.</param>
         </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWLogicalArray.ConvertToType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
         <member name="F:MathWorks.MATLAB.NET.Arrays.MWLogicalArray._Empty">
             <summary internal= "true">
             Internal static member variable - Empty array
@@ -1187,6 +1275,11 @@
             Internal function - Calls MCR "feval" function
             </summary>
         </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclImpersonationFeval(System.IntPtr,System.String,System.Int32,System.IntPtr[],System.Int32,System.IntPtr[],System.IntPtr)">
+            <summary internal= "true">
+            Internal function - Calls MCR "feval" function that respects impersonation
+            </summary>
+        </member>
         <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclGetDotNetComponentType">
             <summary internal= "true">
             Internal function
@@ -1198,11 +1291,6 @@
             </summary>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclGetMCCTargetType(System.Byte)">
-            <summary internal= "true">
-            Internal function
-            </summary>
-        </member>
-        <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclInhibitShutdown">
             <summary internal= "true">
             Internal function
             </summary>
@@ -1222,7 +1310,7 @@
             Internal function
             </summary>
         </member>
-        <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclmcrInitialize">
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclmcrInitialize2(System.Int32)">
             <summary internal= "true">
             Internal function
             </summary>
@@ -1273,6 +1361,11 @@
             </summary>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclIsNoDisplaySet">
+            <summary internal= "true">
+            Internal function
+            </summary>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.mclMxDestroyArray(System.IntPtr,System.Boolean)">
             <summary internal= "true">
             Internal function
             </summary>
@@ -1465,6 +1558,21 @@
             <param name="argsOut">An array of MWArrays into which the function outputs are copied</param>
             <param name="argsIn">An array of input arguments</param>
         </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.EvaluateFunctionForTypeSafeCall(System.String,System.Int32,System.Object[]@,System.Object[],System.Object[])">
+            <summary>
+            This method accesses the MCR to evaluate a varargin MATLAB function.
+            </summary>
+            <remarks>
+            If the method fails, it throws an exception containing the message returned by the 
+            LastErrorMessage property.
+            </remarks>
+            <exclude/>
+            <param name="numArgsOut">The number of output arguments to return.</param>
+            <param name="functionName">The name of the MATLAB function to evaluate.</param>
+            <param name="argsOut">An array of MWArrays into which the function outputs are copied</param>
+            <param name="argsIn">MATLAB array input arguments.</param>
+            <param name="varArgsIn">MATLAB array input arguments as a varargin array.</param>
+        </member>
         <member name="M:MathWorks.MATLAB.NET.Utility.MWMCR.GetMCRLogFileName">
             <summary>
             This function should be used to get the logfile name that is being used by MCR
@@ -1560,12 +1668,72 @@
             <param name="data">String to print from native code</param>
             <returns>Number of characters printed</returns>
         </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMarshal.MarshalManagedColumnMajorToUnmanagedColumnMajor(System.Array,System.IntPtr)">
+            <summary>
+            Copies column major data from a managed N-D array(rank at least 2) to an unmanaged buffer 
+            </summary>
+            <param name="managedSrc">Managed source N-D array</param>
+            <param name="dest">Unmanaged buffer where the underlying type is assumed to be the same as managedSrc</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMarshal.MarshalManagedColumnMajorToUnmanagedColumnMajor(System.Array,System.Double*)">
+            <summary>
+            Copies column major data from a managed N-D array(rank at least 2) to an unmanaged buffer 
+            </summary>
+            <param name="managedSrc">Managed source N-D array</param>
+            <param name="destPtr">Unmanaged buffer of type double</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMarshal.MarshalManagedRowMajorToUnmanagedColumnMajor(System.Array,System.IntPtr)">
+            <summary>
+            Copies row major data from a managed N-D array(rank at least 2) to an unmanaged buffer 
+            </summary>
+            <param name="managedSrc">Managed source N-D array</param>
+            <param name="dest">Unmanaged buffer where the underlying type is assumed to be the same as managedSrc</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMarshal.MarshalUnmanagedColumnMajorToManagedRowMajor(System.IntPtr,System.Array)">
+            <summary>
+            Copies column major data from a unmanaged buffer to an N-D array(rank at least 2) 
+            </summary>
+            <param name="src">Unmanaged buffer where the underlying type is assumed to be the same as dest</param>
+            <param name="dest">Managed N-D array</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMarshal.MarshalManagedRowMajorToUnmanagedColumnMajor(System.Array,System.Double*)">
+            <summary>
+            Copies row major data from a managed N-D array(rank at least 2) to an unmanaged buffer of type double
+            </summary>
+            <param name="managedSrc">Managed source N-D array</param>
+            <param name="destPtr">Unmanaged buffer of type double</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMarshal.MarshalManagedFlatArrayToUnmanaged(System.Array,System.IntPtr)">
+            <summary>
+            Copies managed vector to an unmanaged buffer
+            </summary>
+            <param name="flatArray">Managed vector</param>
+            <param name="dest">Unmanaged buffer where the unlerlying type is same as the element type of flatArray</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MWMarshal.MarshalUnmanagedToManagedFlatArray(System.IntPtr,System.Array)">
+            <summary>
+            Copies unmanaged buffer to a managed vector
+            </summary>
+            <param name="src">Unmanaged buffer where the unlerlying type is same as the element type of flatArray</param>
+            <param name="flatArray">Managed vector</param>
+        </member>
         <member name="T:MathWorks.MATLAB.NET.Utility.PlatformInfo">
             <summary>
             Utility class that provides useful information regarding operating system
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "T:MathWorks.MATLAB.NET.Utility.NativeGCAttribute" -->
+        <member name="T:MathWorks.MATLAB.NET.Utility.NativeGCAttribute">
+            <summary>
+            The <c>NativeGCAttribute</c> class defines a custom assembly attribute that keeps track of the native heap allocations for 
+            instances of the <c>MWArray</c> classes.  When the specified or default memory allocation has been reached, the appropriate
+            add/remove memory pressure method is called.
+            </summary>
+            <remarks>
+            The use of this attribute is optional, however, if it is defined it must be specified on the main
+            assembly.  If not specified, the default behavior is to enable the GC trigger with a block 
+            size of 1 Meg byte. 
+            </remarks>
+        </member>
         <member name="M:MathWorks.MATLAB.NET.Utility.NativeGCAttribute.#ctor(System.Boolean)">
             <summary>
             Public <c>NativeGCAttribute</c> constructor
@@ -1951,13 +2119,13 @@
             <summary internal= "true">
             Creates a safe handle for the pointer to the specified mxArray and sets the ownership to true
             </summary>
-            <param name="handle">The unmanaged mxArray handle</param>
+            <param name="hMXArray">The unmanaged mxArray handle</param>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Utility.MWSafeHandle.#ctor(System.IntPtr,System.Boolean)">
             <summary internal= "true">
             Creates a safe handle for the pointer to the specified mxArray and sets the ownership as specified
             </summary>
-            <param name="handle">The unmanaged mxArray handle</param>
+            <param name="hMXArray">The unmanaged mxArray handle</param>
             <param name="ownsHandle">Specifies if the safe handle owns the undelying unmanaged array handle</param>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Utility.MWSafeHandle.ReleaseHandle">
@@ -1982,14 +2150,21 @@
             <summary internal= "true">
             Internal Constructor
             </summary>
-            <param name="pMXArray">Pointer to a native mxArray</param>
+            <param name="hMXArray">Pointer to a native mxArray</param>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.#ctor">
             <summary>
             The default constructor creates an empty <c>MWObjectArray</c> containg an empty .NET object.  
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.#ctor(System.Object)" -->
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.#ctor(System.Object)">
+            <summary>
+            Creates an <c>MWObjectArray</c> wrapper for the specified .NET object.  
+            </summary>
+            <remarks>
+            <param name="obj">A native .NET object</param>
+            </remarks>
+        </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.Dispose(System.Boolean)">
             <summary internal= "true">
             Internal function
@@ -2000,17 +2175,26 @@
             <summary>
             Compares the two encapsulated .NET objects for reference equality; that is, they must be the same object.
             </summary>
-            <param name="objectArray">An instance of <c>MWObjectArray</c></param>
+            <param name="objectArrayA">An instance of <c>MWObjectArray</c></param>
+            <param name="objectArrayB">An instance of <c>MWObjectArray</c></param>
             <returns>The result of the comparison for equality</returns>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.op_Inequality(MathWorks.MATLAB.NET.Arrays.MWObjectArray,MathWorks.MATLAB.NET.Arrays.MWObjectArray)">
             <summary>
             Compares the two encapsulated .NET objects for reference inequality; that is, they are different objects.
             </summary>
-            <param name="objectArray">An instance of <c>MWObjectArray</c></param>
+            <param name="objectArrayA">An instance of <c>MWObjectArray</c></param>
+            <param name="objectArrayB">An instance of <c>MWObjectArray</c></param>
             <returns>The result of the comparison for inequality</returns>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.Equals(System.Object)">
+            <summary>
+            Compares the two encapsulated .NET objects for reference equality; that is, they must be the same object.
+            </summary>
+            <param name="obj">An instance of <c>MWObjectArray</c></param>
+            <returns>The result of the comparison for equality</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.Equals(MathWorks.MATLAB.NET.Arrays.MWObjectArray)">
             <summary>
             Compares the two encapsulated .NET objects for reference equality; that is, they must be the same object.
             </summary>
@@ -2051,7 +2235,12 @@
             </summary>
             <returns>The hashcode for the <c>MWArray</c></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.ToString" -->
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWObjectArray.ToString">
+            <summary>
+            Returns a formatted string representing the contents of the encapsulated object
+            </summary>
+            <returns>The formatted output string</returns>
+        </member>
         <member name="P:MathWorks.MATLAB.NET.Arrays.MWObjectArray.Item(System.Int32[])">
             <summary>
             <c>MWObjectArray</c> indexer
@@ -3009,19 +3198,21 @@
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWNumericArray.#ctor(System.Array)">
             <summary>
-            Creates an m-by-n-by-p-by-... real double numeric array from a native array in row major order.
+            Creates an m-by-n-by-p-by-... real double numeric array from a native rectangular array in row major order.
             The numeric array will have the same shape as the user specified data array. 
+            If the input array is a jagged array then creates an m-by-n-by-p-by-... numeric array of the same type as the
+            element type of the jagged array.Throws if the jagged array does not have a rectangular shape.  
             </summary>
             <remarks>
             A real double numeric array is created that can be used in the double array computations supported by MATLAB.
-            To create a specific array type, or to use a data array in column major order use the constructor: 
+            To create a specific array type from a rectangular array, or to use a data array in column major order use the constructor: 
             MWNumericArray(Array realData, bool makeDouble, bool rowMajorData).
-            Valid types are byte, short, int, long, float, or double.  Jagged arrays are not allowed.  
+            Valid types are byte, short, int, long, float, or double. 
             <newpara></newpara> 
             NOTE: As MATLAB arrays must have at least two dimensions, single dimension data vectors will result in the 
             creation of a two dimensional array with a single row.
             </remarks>
-            <param name="realData">A native array containng the real data.</param>
+            <param name="array">A native array containng the real data.</param>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWNumericArray.#ctor(System.Array,System.Boolean,System.Boolean)">
             <summary>
@@ -3308,14 +3499,23 @@
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWNumericArray.validateInput(System.Int32,System.Array,System.Array)">
             <summary>
-            Internal static method that checks if the size specified for the MWNumericArray matches 
-            the size of the data passed in and for complex arrays checks that the size and rank
-            of the real and imaginary component match.
+            Internal static method that checks if the size specified for the MWNumericArray 
+            matches the size of the data passed in and for complex arrays checks that the size, 
+            rank and dimension of the real and imaginary component match.
             </summary>
             <param name="specifiedSize">size of the new MWNumericArray </param>
             <param name="realData">real component</param>
             <param name="imaginaryData">imaginary component</param>
             <returns>void if valid, otherwise throws an Exception</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWNumericArray.validateInput(System.Array,System.Array)">
+            <summary>
+            Internal static method that checks if the input array is a valid type for 
+            converting to MWNumericArray. Also checks that the size, rank and 
+            dimension of the real and imaginary component match for complex arrays.
+            </summary>
+            <param name="realData">real component</param>
+            <param name="imaginaryData">imaginary component</param>
         </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWNumericArray.MakeSparse(System.Int32,System.Int32,MathWorks.MATLAB.NET.Arrays.MWArrayComplexity,System.Int32)">
             <overloads>
@@ -3539,6 +3739,30 @@
             <param name="imaginaryData">An array that contains the imaginary data.</param>
             <param name="makeDouble">Create a MATLAB double array</param>
             <param name="rowMajorData">A boolean flag indicating whether the data array is in column or row major order</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWNumericArray.FastBuildNumericArray(System.Array,System.Array,System.Boolean,System.Boolean)">
+            <summary internal= "true">
+            Internal utility routine that returns a MATLAB mxArray for which the type, dimensions, 
+            and data are defined by a native array of real and imaginary values.  
+            </summary>
+            <remarks>
+            Valid data arrays are non-jagged arrays. of type byte, short, int, long, float, or double. 
+            The returned MATLAB array will be of type double regardless of the element type of the native 
+            array.  The imaginary data array can be null, but if present, its size and type must match 
+            the real data array.  If required, this method will optionally convert the data arrays to 
+            double and/or column major arrays. 
+            </remarks>
+            <param name="realData">An array that contains the real data.</param>
+            <param name="imaginaryData">An array that contains the imaginary data.</param>
+            <param name="makeDouble">Create a MATLAB double array</param>
+            <param name="rowMajorData">A boolean flag indicating whether the data array is in column or row major order</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWNumericArray.ConvertToType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
         </member>
         <member name="F:MathWorks.MATLAB.NET.Arrays.MWNumericArray.Inf">
             <summary>
@@ -4277,6 +4501,27 @@
             Returns a native string array with the same dimensions and values as the character array. 
             </summary>
         </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWCharArray.CharArrayToString(System.Array)">
+            <summary>
+            Converts a char[N] or char[1,N] to a string
+            </summary>
+            <param name="src">char[N] or char[1,N] array</param>
+            <returns>string constructed from the chars in src </returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWCharArray.CharArrayToStringArray(System.Array)">
+            <summary>
+            Converts an N dimensional char array to a N-1 dimensional string array where the right most dimension chars are constructed into strings
+            </summary>
+            <param name="src">N dimensional char array</param>
+            <returns>N-1 dimensional string array</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Arrays.MWCharArray.ConvertToType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
         <member name="M:MathWorks.MATLAB.NET.Arrays.MWCharArray.ToString">
             <summary>
             Returns a native string representing the character array
@@ -4326,6 +4571,111 @@
         <member name="P:MathWorks.MATLAB.NET.Arrays.MWCharArray.Empty">
             <summary>
             Read only property returning a writeable version of an empty <c>MWCharArray</c>.
+            </summary>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.#ctor(System.Array)">
+            <summary>
+            Construct a object that wraps a rectangular jagged array. Throws an exception if the array is not rectangular.
+            </summary>
+            <param name="array">Input array</param>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.IsRectangular(System.Array)">
+            <summary>
+            Checks if the wrapped jagged array has a rectangular shape
+            </summary>
+            <returns>True if the wrapped array has a rectangular shape</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.IsRectangular(System.Array,System.Int32)">
+            <summary>
+            Helper method for IsRectangular()
+            </summary>
+            <param name="array">Jagged array</param>
+            <param name="rank">Rank of the jagged array</param>
+            <returns>True if array has a rectangular shape</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetRank">
+            <summary>
+            Calculates the rank of the wrapped jagged array. 
+            For example int[][][][] has a rank of 4. 
+            </summary>
+            <returns>The rank of the wrapped array.</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetRank(System.Array)">
+            <summary>
+            Helper method for GetRank()
+            </summary>
+            <param name="array">Jagged array</param>
+            <returns>The rank of array.</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.IsJagged(System.Array)">
+            <summary>
+            Static method that checks if an array is jagged.
+            </summary>
+            <param name="array">Input array</param>
+            <returns>True if array is jagged.</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetRank(System.Type)">
+            <summary>
+            Static method that calculates the Rank of a Type
+            </summary>
+            <param name="t">Type of an object</param>
+            <returns>The rank of a jagged array</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.IsJagged(System.Type)">
+            <summary>
+            Static method that checks if a Type object is jagged
+            </summary>
+            <param name="t">Type of an object</param>
+            <returns>True if t is a jagged array type</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetElementType(System.Type)">
+            <summary>
+            Static method to get the base element type of a jagged array.
+            For example int[][] has a base element type of int.
+            </summary>
+            <param name="t">Type of an object</param>
+            <returns>The type of the base element type of t</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetDimension(System.Int32)">
+            <summary>
+            Calculates the size along the specified dimension of the wrapped jagged array. 
+            </summary>
+            <param name="dim">dimension</param>
+            <returns>
+            The size along dim.Throws an exception if dim is out of range. 
+            </returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetDimensions">
+            <summary>
+            Returns the sizes of the all the dimensions.
+            </summary>
+            <returns>An int[] of the sizes along all dimensions</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetFlatArray">
+            <summary>
+            Calculates a column major flat array from the wrapped row major jagged array. 
+            </summary>
+            <returns>Column major flat array</returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetElementType">
+            <summary>
+            Deduces the base element type of the jagged array
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.JaggedArray.GetJaggedArrayFromFlatArray(System.Array,System.Int32[])">
+            <summary>
+            Convert a flatArray to a N-dimensional rectangular jagged array
+            </summary>
+            <param name="flatArray">Input 1-Dimensional array</param>
+            <param name="dimensions">dimensions of the returned array. The dimensions are specified 
+            in C-style order with the left most dimension is the highest dimension. For example a 
+            3-D array dimensions would be specified as int[]{page,row,col}</param>
+            <returns>N-dimensional rectangular jagged array on success</returns>
+        </member>
+        <member name="P:MathWorks.MATLAB.NET.Utility.JaggedArray.ArrayData">
+            <summary>
+            Read only property that returns the wrapped jagged array
             </summary>
         </member>
         <member name="T:MathWorks.MATLAB.NET.Arrays.native.MWCellArray">
@@ -4484,6 +4834,61 @@
         <member name="P:MathWorks.MATLAB.NET.Utility.MWMCROptionAttribute.MWMCROption">
             <summary>
             Returns the string representing the MCR option.
+            </summary>
+        </member>
+        <member name="T:MathWorks.MATLAB.NET.Utility.MCRVersion">
+            <summary>
+            Tag an assembly with the version of the MCR that it requires.
+            </summary>
+        </member>
+        <member name="F:MathWorks.MATLAB.NET.Utility.MCRVersion.Major">
+            <summary>
+            MCR major version number.
+            </summary>
+        </member>
+        <member name="F:MathWorks.MATLAB.NET.Utility.MCRVersion.Minor">
+            <summary>
+            MCR minor version number.
+            </summary>
+        </member>
+        <member name="F:MathWorks.MATLAB.NET.Utility.MCRVersion.Update">
+            <summary>
+            MCR update version number.
+            </summary>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MCRVersion.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor. 
+            </summary>
+        </member>
+        <member name="T:MathWorks.MATLAB.NET.Utility.MATLABSignature">
+            <summary>
+            Embed MATLAB function signature information in assembly.
+            </summary>
+        </member>
+        <member name="F:MathWorks.MATLAB.NET.Utility.MATLABSignature.Name">
+            <summary>
+            MATLAB function name.
+            </summary>
+        </member>
+        <member name="F:MathWorks.MATLAB.NET.Utility.MATLABSignature.Inputs">
+            <summary>
+            Maximum number of inputs.
+            </summary>
+        </member>
+        <member name="F:MathWorks.MATLAB.NET.Utility.MATLABSignature.Outputs">
+            <summary>
+            Maximum number of outputs.
+            </summary>
+        </member>
+        <member name="F:MathWorks.MATLAB.NET.Utility.MATLABSignature.HasVarArgIn">
+            <summary>
+            Flag to indicate if the function has variable inputs
+            </summary>
+        </member>
+        <member name="M:MathWorks.MATLAB.NET.Utility.MATLABSignature.#ctor(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor. One attribute declaration per MATLAB function.
             </summary>
         </member>
         <member name="T:MathWorks.MATLAB.NET.Utility.MWException">

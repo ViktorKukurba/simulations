@@ -2,18 +2,18 @@
 import pylab as p
 # Definition of parameters
 a = 1.
-b = 0.1
-c = 1.5
-d = 1.75
-def dX_dt(X, t=1):
+b = 1
+c = 1
+d = 1
+def dX_dt(X, t=0):
 	""" Return the growth rate of fox and rabbit populations. """
-	return array([1/t*(a*X[0] -   b*X[0]*X[1]) ,
-                    1/t*(-c*X[1] + d*b*X[0]*X[1])])
+	return array([(a*X[0] -   b*X[0]*X[1]) ,
+                    (-c*X[1] + d*b*X[0]*X[1])])
 
 from scipy import integrate
-t = linspace(1, 15000,  1000)              # time
+t = linspace(0, 1500,  100)              # time
 #print t
-X0 = array([3, 5])                     # initials conditions: 10 rabbits and 5 foxes
+X0 = array([2, 3])                     # initials conditions: 10 rabbits and 5 foxes
 X, infodict = integrate.odeint(dX_dt, X0, t, full_output=True)
 infodict['message']
 #print infodict

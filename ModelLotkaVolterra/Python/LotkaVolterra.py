@@ -15,7 +15,7 @@ def Solve():
 # Definition of parameters
 	import pylab as p
 	t = np.linspace(0, 15,  100) # time
-	X0 = np.array([100, 5])        # initials conditions: 10 rabbits and 5 foxes
+	X0 = np.array([10, 5])        # initials conditions: 10 rabbits and 5 foxes
 	print t
 	X, infodict = odeint(dX_dt, X0, t, full_output=True)
 	infodict['message']

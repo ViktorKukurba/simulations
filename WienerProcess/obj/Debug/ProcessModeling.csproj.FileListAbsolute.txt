@@ -8,3 +8,9 @@ D:\Aspiranture\Моделювання\Winner\M2\obj\Debug\WiennerProcess.exe
 D:\Aspiranture\Моделювання\Winner\M2\obj\Debug\ProcessModeling.csprojResolveAssemblyReference.cache
 D:\Aspiranture\Dis_project\simulations\WienerProcess\obj\Debug\WiennerProcess.exe
 D:\Aspiranture\Dis_project\simulations\WienerProcess\obj\Debug\WiennerProcess.pdb
+D:\Aspiranture\Dis_project\simulations\WienerProcess\bin\Debug\WiennerProcess.exe
+D:\Aspiranture\Dis_project\simulations\WienerProcess\bin\Debug\WiennerProcess.pdb
+D:\Aspiranture\Dis_project\simulations\WienerProcess\obj\Debug\ProcessModeling.csprojResolveAssemblyReference.cache
+D:\Aspiranture\Dis_project\simulations\WienerProcess\obj\Debug\WiennerProcess.ProgramInterface.resources
+D:\Aspiranture\Dis_project\simulations\WienerProcess\obj\Debug\WiennerProcess.Properties.Resources.resources
+D:\Aspiranture\Dis_project\simulations\WienerProcess\obj\Debug\ProcessModeling.csproj.GenerateResource.Cache

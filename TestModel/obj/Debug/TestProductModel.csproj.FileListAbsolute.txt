@@ -20,4 +20,3 @@ D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\Interop.Mathcad.dll
 D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\TestProductModel.csproj.ResolveComReference.cache
 D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\TestProductModel.dll
 D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\TestProductModel.pdb
-D:\Aspiranture\Dis_project\simulations\TestModel\obj\Debug\TestProductModel.csprojResolveAssemblyReference.cache

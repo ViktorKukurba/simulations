@@ -17,8 +17,8 @@ namespace LotkaVolterra.Classes
 
     public abstract class LVSimulation
     {
-        public abstract List<MLVPoint> Generate(double start, double finish, double a, double b, double c, double d, double nStart, double pStart);
-        public abstract List<MLVPoint> SAPProcess(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double alpha);
+        public abstract List<MLVPoint> Generate(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double j);
+        public abstract List<MLVPoint> SAPProcess(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double alpha, double j);
     }
 
     /// <summary>
@@ -26,16 +26,23 @@ namespace LotkaVolterra.Classes
     /// </summary>
     public class PyLVSimulation : LVSimulation
     {
-        public override List<MLVPoint> Generate(double start, double finish, double a, double b, double c, double d, double nStart, double pStart)
+		public PyLVSimulation()
+		{
+			var options = new Dictionary<string, object>();
+			options["Frames"] = true;
+			options["FullFrames"] = true;
+			var ipy = Python.CreateRuntime(options);
+			test = ipy.UseFile("..\\..\\Python\\test.py");
+		}
+		private dynamic test;
+        public override List<MLVPoint> Generate(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double j)
         {
-            var options = new Dictionary<string, object>();
-            options["Frames"] = true;
-            options["FullFrames"] = true;
-            var ipy = Python.CreateRuntime(options);
-            dynamic test = ipy.UseFile("..\\..\\Python\\test.py");
-            var t = test.LotkaVolterra(start, finish, a, b, c, d, nStart,pStart);
+			//var t = test.LotkaVolterra(start, finish, a, b, c, d, nStart, pStart);
+            var t = test.LotkaVolterra();
             var list = new List<MLVPoint>();
-            var length2 = ((Array)t[0]).Length; //temp.Array; //t.NumberOfElements;
+			var temp = t[0];
+			var temp2 = temp[0];
+            var length2 = t[0].Size; //temp.Array; //t.NumberOfElements;
             for (var i = 0; i < length2; i++)
             {
                 var psoPoint = new MLVPoint()
@@ -49,7 +56,7 @@ namespace LotkaVolterra.Classes
             return list;
         }
 
-        public override List<MLVPoint> SAPProcess(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double alpha)
+        public override List<MLVPoint> SAPProcess(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double alpha, double j)
         {
             throw new NotImplementedException();
         }
@@ -59,14 +66,14 @@ namespace LotkaVolterra.Classes
     /// </summary>
     public class MatLabLVSimulation: LVSimulation
     {
-        public override List<MLVPoint> Generate(double start, double finish, double a, double b, double c, double d, double nStart, double pStart)
+        public override List<MLVPoint> Generate(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double j)
         {
-            var lotka = new ModelLotkaVolterra.LotkaVolterra();
+            var lotka = new MLV2.LotkaVolterra();
             var tspan = new double[] { start, finish };
             var tspan1 = new double[] { nStart, pStart };
             var mwtspan = new MWNumericArray(tspan);
             var mwtspan2 = new MWNumericArray(tspan1);
-            var mwArrayOut = lotka.MLV(2, mwtspan, mwtspan2,a,b,c,d);
+            var mwArrayOut = lotka.MLV2(2, mwtspan, mwtspan2,a,b,c,d, j);
             var list = new List<MLVPoint>();
             var length = mwArrayOut[0].NumberOfElements;
             for (var i = 0; i < length; i++)
@@ -82,14 +89,14 @@ namespace LotkaVolterra.Classes
             return list;
         }
 
-        public override List<MLVPoint> SAPProcess(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double alpha = 1.00)
+        public override List<MLVPoint> SAPProcess(double start, double finish, double a, double b, double c, double d, double nStart, double pStart, double alpha, double j)
         {
-            var lotka = new ModelLotkaVolterra.LotkaVolterra();
+            var lotka = new MLV2.LotkaVolterra();
             var tspan = new double[] { start, finish };
             var tspan1 = new double[] { nStart, pStart };
             var mwtspan = new MWNumericArray(tspan);
             var mwtspan2 = new MWNumericArray(tspan1);
-            var mwArrayOut = lotka.MLV_SAP(2, mwtspan, mwtspan2, a, b, c, d, alpha);
+            var mwArrayOut = lotka.MLV_SAP2(2, mwtspan, mwtspan2, a, b, c, d, alpha, j);
             var list = new List<MLVPoint>();
             var length = mwArrayOut[0].NumberOfElements;
             for (var i = 0; i < length; i++)
